@@ -1,0 +1,53 @@
+/*
+ *
+ * $Typography - Base font styles
+ *
+**/
+
+/* Font Faces */
+.font-arial { font-family:Arial, Helvetica, "Lucida Grande", sans-serif; }
+
+/* Common Text Sizes */
+.type-xsmall { font-size:0.725em; }
+.type-small { font-size:1em; }
+.type-medium { font-size:1.4em; }
+.type-large { font-size:1.8em; }
+.type-xlarge { font-size:24px; }
+
+
+/* ==============
+ * Type
+ * =============*/
+
+body {
+    .font-arial;
+    font-size:14px; /* base font size */
+    background-color:@body;
+}
+
+a {
+    text-decoration:underline;
+    color:@body-text;
+}
+
+p {
+    .type-small;
+    padding:0 0 1em;
+    color:@body-text;
+    line-height:1.4;
+}
+
+sub,sup { .type-xsmall; }
+
+
+h1,h2,h3,h4 {
+    margin:0;
+    padding-bottom:8px;
+    color:@heading;
+    line-height:1;
+    font-weight:bold;
+}
+
+h1 { .type-xlarge; }
+h2 { .type-large; }
+h3 { .type-medium; }
