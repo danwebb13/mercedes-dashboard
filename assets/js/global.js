@@ -2,7 +2,7 @@ $(function() {
 
 	// Progress Bar
 	var progressbar = $( "#progressbar" ),
-	  	progressLabel = $( ".js-progress-label" );
+	  	progressLabel = $( ".js-progress-value" );
 
 	progressbar.progressbar({
 	  value: 10,
