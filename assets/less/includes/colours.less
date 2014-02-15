@@ -15,22 +15,36 @@
 @black: #000;
 
 /*Greys*/
-@grey: #666;
+@grey-soft: #999;
+@grey-dark: #333;
+
+/*Blues*/
+@blue-royal: #003366;
+@blue-bright: #00ccff;
 
 
 
 /*================*
  * Containers
  *================*/
- @body: @black;
-
+@body: @black;
+@page: @white;
 
 
 /*================*
  * Typography
  *================*/
-@body-text: @grey;
-@heading: @grey;
+@body-text: @grey-dark;
+@heading: @blue-royal;
+@link: @heading;
+@link-hover: @blue-bright;
+
+
+/*================*
+ * Buttons
+ *================*/
+@button: @blue-royal;
+@button-hover: @grey-soft;
 
 
 /*================*
@@ -38,3 +52,26 @@
  *================*/
 @nav: @black;
 @nav-text: @white;
+
+
+/*================*
+ * Lists
+ *================*/
+@detail-label: @white;
+@detail-value: @detail-label;
+
+
+/*================*
+ * Assistant
+ *================*/
+@assistant: @black;
+@assistant-heading: @blue-bright;
+@assistant-link: @assistant-heading;
+
+
+/*================*
+ * Tables
+ *================*/
+@data-table-heading: @blue-royal;
+@data-table-text: @body-text;
+@data-table-divider: @data-table-heading;

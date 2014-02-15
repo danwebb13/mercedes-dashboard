@@ -1,0 +1,43 @@
+/* 
+ * 
+ * $DataTable
+ *
+ * The styles for the data tables on the dashboard.
+ *
+**/
+
+.data-table {
+	margin-bottom:20px;
+
+	th {
+		padding:12px;
+		color:@data-table-heading;
+		font-weight:bold;
+		text-align:center;
+	}
+	td {
+		padding:12px 0;
+		color:@data-table-text;
+		.type-small;
+		line-height:1.725;
+		text-align:center;
+	}
+}
+
+.data-table--driver-profile {
+	th,td {
+		border-bottom-style:solid;
+		border-bottom-color:@data-table-divider;
+	}
+	th { border-bottom-width:2px; }
+	td { border-bottom-width:1px; }
+}
+
+.t-col1 { width:18px; }
+.t-col2 { width:110px; }
+.t-col3 { width:240px; }
+.t-col4 { width:42px; }
+.t-col5 { .t-col4; }
+.t-col6 { .t-col4; }
+.t-col7 { width:88px; }
+.t-col8 { width:166px; }

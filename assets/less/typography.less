@@ -12,7 +12,7 @@
 .type-small { font-size:0.857em; } /*12px*/
 .type-medium { font-size:1em; } /*14*/
 .type-large { font-size:1.143em; } /*16px*/
-.type-xlarge { font-size:1.286em; } /*18px*/
+.type-xlarge { font-size:1.714em; } /*24px*/
 
 
 /* ==============
@@ -27,7 +27,10 @@ body {
 
 a {
     text-decoration:underline;
-    color:@body-text;
+    color:@link;
+    &:hover {
+        color:@link-hover;
+    }
 }
 
 p {
@@ -49,5 +52,8 @@ h1,h2,h3,h4 {
 }
 
 h1 { .type-xlarge; }
-h2 { .type-large; }
-h3 { .type-medium; }
+h2 { .type-xlarge; }
+h3 { .type-large; }
+
+ul,ol { padding:0 0 14px 0; }
+li { list-style:disc; }
