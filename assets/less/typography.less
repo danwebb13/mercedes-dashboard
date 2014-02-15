@@ -26,10 +26,13 @@ body {
 }
 
 a {
+    .type-small;
+    padding:0 0 1em;
     text-decoration:underline;
     color:@link;
     &:hover {
         color:@link-hover;
+        text-decoration:underline;
     }
 }
 
@@ -57,3 +60,10 @@ h3 { .type-large; }
 
 ul,ol { padding:0 0 14px 0; }
 li { list-style:disc; }
+
+
+/* Custom Links */
+.link-small {
+    .type-small;
+    padding-bottom:0;
+}

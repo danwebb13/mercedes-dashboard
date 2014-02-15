@@ -12,7 +12,7 @@
     <div class="container">
         <div class="page">
 
-            <section class="page--header">
+            <section>
                 <div class="intro">
                     <?php include 'elements/home/intro.php'; ?>
                 </div>
@@ -24,15 +24,20 @@
                 </div>
             </section>
 
-            <section class="data-table">
+            <section>
                 <?php include 'elements/modules/table-profile.php' ?>
+                <a class="link-small" href="#">Download a pdf of this page</a>
             </section>
 
         </div>
     </div>
 
     <!-- Footer -->
-    <?php include 'elements/footer.php'; ?>
+    <div class="container">
+        <footer>
+            <?php include 'elements/footer.php'; ?>
+        </footer>
+    </div>
 
     <!-- Javascript -->
     <?php include 'elements/js.php'; ?>
