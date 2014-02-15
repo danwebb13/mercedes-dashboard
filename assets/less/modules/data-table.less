@@ -6,6 +6,16 @@
  *
 **/
 
+/* Tab jquery ui overrides */
+.ui-tabs {
+	margin-bottom:20px;
+}
+.ui-tabs-anchor {
+	.type-medium;
+	font-weight:bold;
+}
+
+
 .data-table {
 	margin-bottom:20px;
 
@@ -22,6 +32,12 @@
 		p {
 			color:@data-table-text;
 			padding-bottom:0;
+		}
+		a {
+			color:@link; /*Have to remove jquery anchor styles*/
+			&:hover {
+				color:@link-hover;
+			}
 		}
 	}
 }

@@ -25,8 +25,24 @@
             </section>
 
             <section>
-                <?php include 'elements/modules/table-profile.php' ?>
-                <a class="link-small" href="#">Download a pdf of this page</a>
+                <div id="tabs">
+                    <ul>
+                        <li><a href="#tabs-1">Current Year</a></li>
+                        <li><a href="#tabs-2">Year 2</a></li>
+                        <li><a href="#tabs-3">Year 1</a></li>
+                    </ul>
+                    <div id="tabs-1">
+                        <?php include 'elements/modules/table-profile.php' ?>
+                    </div>
+                    <div id="tabs-2">
+                        <?php include 'elements/modules/table-profile-2.php' ?>
+                    </div>
+                    <div id="tabs-3">
+                        <?php include 'elements/modules/table-profile-1.php' ?>
+                    </div>
+                </div>
+                
+                <a class="link-pdf" href="#">Download a pdf of this page</a>
             </section>
 
         </div>

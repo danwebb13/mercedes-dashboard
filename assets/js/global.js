@@ -11,4 +11,8 @@ $(function() {
 	// Progress label = value 
 	progressLabel.text( progressbar.progressbar( "value" ) + "%" );
 
+
+	// Initialize Tabs
+	$('#tabs').tabs();
+
 });
