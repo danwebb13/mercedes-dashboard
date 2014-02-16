@@ -13,7 +13,7 @@
         <div class="page">
 
             <section>
-                <div class="intro">
+                <div class="intro intro-compact">
                     <?php include 'elements/home/intro.php'; ?>
                 </div>
                 <div class="assistant">
