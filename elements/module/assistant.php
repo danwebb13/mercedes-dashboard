@@ -1,0 +1,2 @@
+<h3 class="assistant--heading">How to use this module</h3>
+<p>A few words about how to use and where to start. A few words about how to use and where to start. A few words about how to use and where to start. A few words about how to use and where to start.</p>

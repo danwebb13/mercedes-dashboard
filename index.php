@@ -2,11 +2,11 @@
 <html>
 
     <!-- Head section -->
-    <?php include 'elements/head.php'; ?>
+    <?php include 'elements/parts/head.php'; ?>
     <body>
 
     <!-- Header -->
-    <?php include 'elements/header.php'; ?>
+    <?php include 'elements/parts/header.php'; ?>
 
     <!-- Content -->
     <div class="container">
@@ -20,7 +20,7 @@
                     <?php include 'elements/home/assistant.php'; ?>
                 </div>
                 <div class="progress">
-                    <?php include 'elements/modules/progress.php'; ?>
+                    <?php include 'elements/parts/progress.php'; ?>
                 </div>
             </section>
 
@@ -32,13 +32,13 @@
                         <li><a href="#tabs-3">Year 1</a></li>
                     </ul>
                     <div id="tabs-1">
-                        <?php include 'elements/modules/table-profile.php' ?>
+                        <?php include 'elements/parts/table-profile.php' ?>
                     </div>
                     <div id="tabs-2">
-                        <?php include 'elements/modules/table-profile-2.php' ?>
+                        <?php include 'elements/parts/table-profile-2.php' ?>
                     </div>
                     <div id="tabs-3">
-                        <?php include 'elements/modules/table-profile-1.php' ?>
+                        <?php include 'elements/parts/table-profile-1.php' ?>
                     </div>
                 </div>
                 
@@ -54,12 +54,12 @@
     <!-- Footer -->
     <div class="container">
         <footer>
-            <?php include 'elements/footer.php'; ?>
+            <?php include 'elements/parts/footer.php'; ?>
         </footer>
     </div>
 
     <!-- Javascript -->
-    <?php include 'elements/js.php'; ?>
+    <?php include 'elements/parts/js.php'; ?>
 
     </body>
 </html>
