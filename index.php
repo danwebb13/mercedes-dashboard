@@ -42,7 +42,10 @@
                     </div>
                 </div>
                 
-                <a class="link-pdf" href="#">Download a pdf of this page</a>
+                <a class="link-pdf" href="#">
+                    <img src="assets/images/icons/icon-pdf.png" alt="" />
+                    <span>Download a pdf of this page</span>
+                </a>
             </section>
 
         </div>
