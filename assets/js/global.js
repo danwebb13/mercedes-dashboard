@@ -15,4 +15,10 @@ $(function() {
 	// Initialize Tabs
 	$('#tabs').tabs();
 
+	// Make entire div clickable
+	$('.js-dashboard-module').click(function(){
+	     window.location=$(this).find(".js-dashboard-module--link").attr("href"); 
+	     return false;
+	});
+
 });

@@ -1,0 +1,61 @@
+/* 
+ * 
+ * $DashboardModule
+ *
+**/
+
+.dashboard-module {
+	float:left;
+	width:100%;
+	padding:20px;
+	border:1px solid @dashboard-module-border;
+	box-sizing:border-box;
+	cursor:pointer;
+	&:hover {
+		border-width:1px;
+		border-color:@dashboard-module-highlight;
+		a {
+			color:@dashboard-module-highlight;
+		}
+	}
+	p {
+		clear:both;
+		padding-bottom:0;
+	}
+}
+
+.dashboard-module--heading {
+	.type-giga;
+	color:@dashboard-module--heading;
+	padding-bottom:10px;
+	text-transform:uppercase;
+}
+
+.dashboard-module--icon {
+	display:block;
+	width:100%;
+	padding-bottom:20px;
+}
+
+.dashboard-module--action {
+	clear:both;
+	float:left;
+	padding-bottom:10px;
+	.type-medium;
+	text-decoration:underline;
+	text-transform:uppercase;
+	font-weight:bold;
+}
+
+.dashboard-module--status {
+	float:left;
+	width:100%;
+	font-weight:bold;
+	text-transform:uppercase;
+}
+.dashboard-module--status-complete { color:green; }
+.dashboard-module--status-incomplete { color:red; }
+
+.dashboard-module--link {
+	.type-medium;
+}

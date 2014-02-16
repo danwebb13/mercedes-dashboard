@@ -1,0 +1,28 @@
+/*
+ *
+ * 3 Columns
+ *
+ *   <div class="l-col3">
+ *      <div class="l-col3-col l-col3-col1"></div>
+ *      <div class="l-col3-col l-col3-col2"></div>
+ *      <div class="l-col3-col l-col3-col3"></div>
+ *   </div>
+ *
+**/
+
+.l-col3 {
+    margin:0 auto;
+    width:100%;
+    .clearfix();
+}
+
+.l-col3-col {
+    clear:none;
+    float:left;
+    width:28.666666666667%; /* 258 / 900 */
+    padding-left:5.555555555556%; /* 50 / 900 */
+}
+
+.l-col3-col1 {
+    padding-left:0;
+}
