@@ -1,0 +1,10 @@
+/* 
+ * 
+ * $Dialog
+ *
+ * The popup dialog box
+ *
+**/
+.ui-widget-overlay {
+  background-image: none;
+}

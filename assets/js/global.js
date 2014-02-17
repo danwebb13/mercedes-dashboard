@@ -21,4 +21,26 @@ $(function() {
 	     return false;
 	});
 
+
+	// Dialog box
+	$(function() {
+		var incomplete 	= "#js-dialog-incomplete";
+
+		$( incomplete ).dialog({
+		  resizable: false,
+		  width: 320,
+		  height: 160,
+		  modal: true,
+		  buttons: {
+		    "Complete Driver Profile": function() {
+		      $( this ).dialog( "close" );
+		    },
+		    Close: function() {
+		      $( this ).dialog( "close" );
+		    }
+		  }
+		});
+
+	});
+
 });

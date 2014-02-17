@@ -48,6 +48,14 @@
                 </a>
             </section>
 
+            <div id="js-dialog-incomplete" title="Please complete your Driver Profile">
+                <p>
+                    <span class="ui-icon ui-icon-alert" style="float:left; margin:0 7px 20px 0;"></span>
+                    Welcome to your current course. Previous courses can be accessed using the tabs on your Dashboard. 
+                    <br />To continue to your Driver Profile, click below. 
+                </p>
+            </div>
+
         </div>
     </div>
 
