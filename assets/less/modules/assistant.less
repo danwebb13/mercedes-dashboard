@@ -11,11 +11,14 @@
 .assistant {
 	float:right;
 	width:236px;
+	min-height:105px;
 	padding:12px 10px;
 	background-color:@assistant;
 	p {
-		padding-bottom:0;
 		color:@assistant-text;
+		&:last-child {
+			padding-bottom:0;
+		}
 	}
 }
 

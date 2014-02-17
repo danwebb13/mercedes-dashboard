@@ -1,5 +1,11 @@
 <h3 class="assistant--heading">Your Driver Profile Details</h3>
-<ul class="details">
+
+<!-- Use this section for the Driver Details content -->
+<p><strong>&gt; Please complete your driver profile</strong></p>
+<p>Status: Incomplete</p> 
+
+<!-- Use this section for the Driver Details content -->
+<!-- <ul class="details">
 	<li class="detail">
 		<span class="detail--label">Status:</span>
 		<span class="detail--value">Completed</span>
@@ -18,4 +24,4 @@
 	</li>
 </ul>
 
-<a class="assistant--link" href="#">View My Profile</a>
+<a class="assistant--link" href="#">View My Profile</a> -->
