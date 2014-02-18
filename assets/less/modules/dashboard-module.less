@@ -5,30 +5,32 @@
 **/
 
 .dashboard-module {
+	position:relative;
+	overflow:hidden;
 	float:left;
 	width:100%;
 	padding:20px;
 	border:1px solid @dashboard-module-border;
 	box-sizing:border-box;
 	cursor:pointer;
+	text-decoration:none;
 	&:hover {
-		border-width:1px;
-		border-color:@dashboard-module-highlight;
-		a {
-			color:@dashboard-module-highlight;
-		}
-	}
-	p {
-		clear:both;
-		padding-bottom:0;
+		color:@body-text;
+		text-decoration:none;
 	}
 }
 
 .dashboard-module--heading {
-	.type-giga;
-	color:@dashboard-module--heading;
+	float:left;
+	width:100%;
 	padding-bottom:10px;
+	font-size:28px;
+	color:@dashboard-module--heading;
 	text-transform:uppercase;
+	font-weight:bold;
+	&:hover {
+		color:@dashboard-module--heading;
+	}
 }
 
 .dashboard-module--icon {
@@ -41,15 +43,17 @@
 	clear:both;
 	float:left;
 	padding-bottom:10px;
-	.type-medium;
+	font-size:14px;
 	text-decoration:underline;
 	text-transform:uppercase;
 	font-weight:bold;
+	color:@dashboard-module-action;
 }
 
-.dashboard-module--status {
+.dashboard-module--status-label {
 	float:left;
 	width:100%;
+	padding-bottom:5px;
 	font-weight:bold;
 	text-transform:uppercase;
 }
@@ -57,5 +61,53 @@
 .dashboard-module--status-incomplete { color:@incomplete; }
 
 .dashboard-module--link {
+	text-decoration:underline;
+}
+
+.dashboard-module--text {
+	clear:both;
+	float:left;
+	width:100%;
 	.type-medium;
+}
+
+.dashboard-module--overlay {
+	position:absolute;
+	top:0;
+	right:100%;
+	width:100%;
+	height:100%;
+	background-position:50% 50%;
+	background-repeat:no-repeat;
+	background-color:@black;
+	background-color:rgba(0,0,0,0.92);
+	z-index:1;
+}
+.dashboard-module--overlay-video { background-image:url("@{base-image-url}/icons/icon-video-white.png"); }
+.dashboard-module--overlay-notes { background-image:url("@{base-image-url}/icons/icon-document-white.png"); }
+.dashboard-module--overlay-test { background-image:url("@{base-image-url}/icons/icon-pencil-white.png"); }
+
+.dashboard-module--video {
+	&:hover {
+		.dashboard-module--overlay-video {
+			right:0;
+			.ease-in();
+		}
+	}
+}
+.dashboard-module--notes {
+	&:hover {
+		.dashboard-module--overlay-notes {
+			right:0;
+			.ease-in();
+		}
+	}
+}
+.dashboard-module--test {
+	&:hover {
+		.dashboard-module--overlay-test {
+			right:0;
+			.ease-in();
+		}
+	}
 }

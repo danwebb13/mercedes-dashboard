@@ -1,4 +1,7 @@
-$(function() {
+$(document).ready(function() {
+
+	// Initialize Tabs
+	$('#tabs').tabs();
 
 	// Progress Bar
 	var progressbar = $( "#progressbar" ),
@@ -10,17 +13,6 @@ $(function() {
 
 	// Progress label = value 
 	progressLabel.text( progressbar.progressbar( "value" ) + "%" );
-
-
-	// Initialize Tabs
-	$('#tabs').tabs();
-
-	// Make entire div clickable
-	$('.js-dashboard-module').click(function(){
-	     window.location=$(this).find(".js-dashboard-module--link").attr("href"); 
-	     return false;
-	});
-
 
 	// Dialog box
 	$(function() {
@@ -42,5 +34,15 @@ $(function() {
 		});
 
 	});
+
+	// Launch fancybox video
+    $(".js-fancybox").on("click", function(){
+        $.fancybox({
+          href: this.href,
+          type: $(this).data("type"),
+          height: 450
+        });
+        return false
+    });
 
 });

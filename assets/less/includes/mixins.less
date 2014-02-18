@@ -30,19 +30,6 @@
     box-shadow:         @params;
 }
 
-.box-shadow-inset() {
-    -moz-box-shadow:    inset 0px 1px 3px 1px #e6e6e6;
-    -webkit-box-shadow: inset 0px 1px 3px 1px #e6e6e6;
-    box-shadow:         inset 0px 1px 3px 1px #e6e6e6;
-}
-
-.box-shadow-inset-strong() {
-    border:0;
-    -moz-box-shadow:    inset 0px 1px 3px 0px #ccc;
-    -webkit-box-shadow: inset 0px 1px 3px 0px #ccc;
-    box-shadow:         inset 0px 1px 3px 0px #ccc;
-}
-
 .image-replace(@width, @height) {
     display:block;
     border:none;
@@ -53,4 +40,12 @@
     &:hover {
         border:none;
     }
+}
+
+.ease-in() {
+    -webkit-transition: all 0.4s ease-in;
+    -moz-transition: all 0.4s ease-in;
+    -ms-transition: all 0.4s ease-in;
+    -o-transition: all 0.4s ease-in;
+    transition: all 0.4s ease-in;
 }
