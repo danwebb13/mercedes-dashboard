@@ -4,13 +4,13 @@
  *
 **/
 
-.dashboard-module {
+.dash-mod {
 	position:relative;
 	overflow:hidden;
 	float:left;
 	width:100%;
 	padding:20px;
-	border:1px solid @dashboard-module-border;
+	border:1px solid @dash-mod-border;
 	box-sizing:border-box;
 	cursor:pointer;
 	text-decoration:none;
@@ -20,26 +20,26 @@
 	}
 }
 
-.dashboard-module--heading {
+.dash-mod--heading {
 	float:left;
 	width:100%;
 	padding-bottom:10px;
 	font-size:28px;
-	color:@dashboard-module--heading;
+	color:@dash-mod--heading;
 	text-transform:uppercase;
 	font-weight:bold;
 	&:hover {
-		color:@dashboard-module--heading;
+		color:@dash-mod--heading;
 	}
 }
 
-.dashboard-module--icon {
+.dash-mod--icon {
 	display:block;
 	width:100%;
 	padding-bottom:20px;
 }
 
-.dashboard-module--action {
+.dash-mod--action {
 	clear:both;
 	float:left;
 	padding-bottom:10px;
@@ -47,31 +47,31 @@
 	text-decoration:underline;
 	text-transform:uppercase;
 	font-weight:bold;
-	color:@dashboard-module-action;
+	color:@dash-mod-action;
 }
 
-.dashboard-module--status-label {
+.dash-mod--status-label {
 	float:left;
 	width:100%;
 	padding-bottom:5px;
 	font-weight:bold;
 	text-transform:uppercase;
 }
-.dashboard-module--status-complete { color:@complete; }
-.dashboard-module--status-incomplete { color:@incomplete; }
+.dash-mod--status-complete { color:@complete; }
+.dash-mod--status-incomplete { color:@incomplete; }
 
-.dashboard-module--link {
+.dash-mod--link {
 	text-decoration:underline;
 }
 
-.dashboard-module--text {
+.dash-mod--text {
 	clear:both;
 	float:left;
 	width:100%;
 	.type-medium;
 }
 
-.dashboard-module--overlay {
+.dash-mod--overlay {
 	position:absolute;
 	top:0;
 	right:100%;
@@ -83,29 +83,29 @@
 	background-color:rgba(0,0,0,0.92);
 	z-index:1;
 }
-.dashboard-module--overlay-video { background-image:url("@{base-image-url}/icons/icon-video-white.png"); }
-.dashboard-module--overlay-notes { background-image:url("@{base-image-url}/icons/icon-document-white.png"); }
-.dashboard-module--overlay-test { background-image:url("@{base-image-url}/icons/icon-pencil-white.png"); }
+.dash-mod--overlay-video { background-image:url("@{base-image-url}/icons/icon-video-white.png"); }
+.dash-mod--overlay-notes { background-image:url("@{base-image-url}/icons/icon-document-white.png"); }
+.dash-mod--overlay-test { background-image:url("@{base-image-url}/icons/icon-pencil-white.png"); }
 
-.dashboard-module--video {
+.dash-mod--video {
 	&:hover {
-		.dashboard-module--overlay-video {
+		.dash-mod--overlay-video {
 			right:0;
 			.ease-in();
 		}
 	}
 }
-.dashboard-module--notes {
+.dash-mod--notes {
 	&:hover {
-		.dashboard-module--overlay-notes {
+		.dash-mod--overlay-notes {
 			right:0;
 			.ease-in();
 		}
 	}
 }
-.dashboard-module--test {
+.dash-mod--test {
 	&:hover {
-		.dashboard-module--overlay-test {
+		.dash-mod--overlay-test {
 			right:0;
 			.ease-in();
 		}

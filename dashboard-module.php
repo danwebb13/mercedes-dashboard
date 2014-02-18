@@ -27,33 +27,33 @@
                 <section class="section--spaced">
                     <div class="l-col3">
                         <div class="l-col3-col l-col3-col1">
-                            <a href="<?php echo $video_url; ?>" data-type="iframe" class="js-dashboard-module js-fancybox dashboard-module dashboard-module--video">
-                                <span class="dashboard-module--heading">Step 1</span>
-                                <img class="dashboard-module--icon" src="assets/images/icons/icon-video.gif" alt="" />
-                                <span class="dashboard-module--action">Watch Video</span>
-                                <span class="dashboard-module--status-label">Status: <span class="dashboard-module--status dashboard-module--status-complete">Complete</span></span>
-                                <span class="dashboard-module--text"><span class="js-dashboard-module--link dashboard-module--link">Click</span> to start the video automatically.</span>
-                                <span class="dashboard-module--overlay dashboard-module--overlay-video"></span>
+                            <a href="<?php echo $video_url; ?>" data-type="iframe" class="js-dash-mod js-fancybox dash-mod dash-mod--video">
+                                <span class="dash-mod--heading">Step 1</span>
+                                <img class="dash-mod--icon" src="assets/images/icons/icon-video.gif" alt="" />
+                                <span class="dash-mod--action">Watch Video</span>
+                                <span class="dash-mod--status-label">Status: <span class="dash-mod--status dash-mod--status-complete">Complete</span></span>
+                                <span class="dash-mod--text"><span class="js-dash-mod--link dash-mod--link">Click</span> to start the video automatically.</span>
+                                <span class="dash-mod--overlay dash-mod--overlay-video"></span>
                             </a>
                         </div>
                         <div class="l-col3-col l-col3-col2">
-                            <a href="/" class="dashboard-module dashboard-module--notes">
-                                <span class="dashboard-module--heading">Step 2</span>
-                                <img class="dashboard-module--icon" src="assets/images/icons/icon-document.gif" alt="" />
-                                <span class="dashboard-module--action">Read Notes</span>
-                                <span class="dashboard-module--status-label">Status: <span class="dashboard-module--status dashboard-module--status-incomplete">Incomplete</span></span>
-                                <span class="dashboard-module--text">Please watch the video first.</span>
-                                <span class="dashboard-module--overlay dashboard-module--overlay-notes"></span>
+                            <a href="/" class="dash-mod dash-mod--notes">
+                                <span class="dash-mod--heading">Step 2</span>
+                                <img class="dash-mod--icon" src="assets/images/icons/icon-document.gif" alt="" />
+                                <span class="dash-mod--action">Read Notes</span>
+                                <span class="dash-mod--status-label">Status: <span class="dash-mod--status dash-mod--status-incomplete">Incomplete</span></span>
+                                <span class="dash-mod--text">Please watch the video first.</span>
+                                <span class="dash-mod--overlay dash-mod--overlay-notes"></span>
                             </a>
                         </div>
                         <div class="l-col3-col l-col3-col3">
-                            <a href="/" class="dashboard-module dashboard-module--test">
-                                <span class="dashboard-module--heading">Step 3</span>
-                                <img class="dashboard-module--icon" src="assets/images/icons/icon-pencil.gif" alt="" />
-                                <span class="dashboard-module--action">Take Test</span>
-                                <span class="dashboard-module--status-label">Status: <span class="dashboard-module--status dashboard-module--status-incomplete">Incomplete</span></span>
-                                <span class="dashboard-module--text">Please read the notes before taking test.</span>
-                                <span class="dashboard-module--overlay dashboard-module--overlay-test"></span>
+                            <a href="/" class="dash-mod dash-mod--test">
+                                <span class="dash-mod--heading">Step 3</span>
+                                <img class="dash-mod--icon" src="assets/images/icons/icon-pencil.gif" alt="" />
+                                <span class="dash-mod--action">Take Test</span>
+                                <span class="dash-mod--status-label">Status: <span class="dash-mod--status dash-mod--status-incomplete">Incomplete</span></span>
+                                <span class="dash-mod--text">Please read the notes before taking test.</span>
+                                <span class="dash-mod--overlay dash-mod--overlay-test"></span>
                             </a>                            
                         </div>
                     </div>
