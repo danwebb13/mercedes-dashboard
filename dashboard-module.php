@@ -33,7 +33,9 @@
                                 <span class="dash-mod--action">Watch Video</span>
                                 <span class="dash-mod--status-label">Status: <span class="dash-mod--status dash-mod--status-complete">Complete</span></span>
                                 <span class="dash-mod--text"><span class="js-dash-mod--link dash-mod--link">Click</span> to start the video automatically.</span>
-                                <span class="dash-mod--overlay dash-mod--overlay-video"></span>
+                                <span class="dash-mod--overlay dash-mod--overlay-video">
+                                    <span class="dash-mod--overlay-text dash-mod--overlay-text-video">Watch Video</span>
+                                </span>
                             </a>
                         </div>
                         <div class="l-col3-col l-col3-col2">
@@ -43,7 +45,9 @@
                                 <span class="dash-mod--action">Read Notes</span>
                                 <span class="dash-mod--status-label">Status: <span class="dash-mod--status dash-mod--status-incomplete">Incomplete</span></span>
                                 <span class="dash-mod--text">Please watch the video first.</span>
-                                <span class="dash-mod--overlay dash-mod--overlay-notes"></span>
+                                <span class="dash-mod--overlay dash-mod--overlay-notes">
+                                    <span class="dash-mod--overlay-text dash-mod--overlay-text-notes">Read Notes</span>
+                                </span>
                             </a>
                         </div>
                         <div class="l-col3-col l-col3-col3">
@@ -53,7 +57,9 @@
                                 <span class="dash-mod--action">Take Test</span>
                                 <span class="dash-mod--status-label">Status: <span class="dash-mod--status dash-mod--status-incomplete">Incomplete</span></span>
                                 <span class="dash-mod--text">Please read the notes before taking test.</span>
-                                <span class="dash-mod--overlay dash-mod--overlay-test"></span>
+                                <span class="dash-mod--overlay dash-mod--overlay-test">
+                                    <span class="dash-mod--overlay-text dash-mod--overlay-text-test">Take Test</span>
+                                </span>
                             </a>                            
                         </div>
                     </div>
