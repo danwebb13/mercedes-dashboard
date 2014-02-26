@@ -16,7 +16,7 @@
                 <li><a href="">Help</a></li>
                 <li><a href="">Logout</a></li>
             </ul>
-            <a class="nav-link" href="#">PDF Downloads</a>
+            <a class="nav-link" href="#">Downloads</a>
         </nav>
     </div>
 </header>
