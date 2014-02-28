@@ -13,7 +13,7 @@
             <div class="page">
 
                 <section>
-                    <a class="breadcrumb" href="/">&lt; Back to My Core Status Page</a>
+                    <a class="breadcrumb" href="/">&lt; Back to Course Status Page</a>
                     <div class="intro">
                         <?php include 'elements/dashboard-module/intro.php'; ?>
                     </div>
