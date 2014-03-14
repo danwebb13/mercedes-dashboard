@@ -340,6 +340,9 @@ ol ol li {
 .heading--bold {
   font-weight: bold;
 }
+.heading--inline {
+  float: left;
+}
 /*=========== */
 /* Icons      */
 /*=========== */
@@ -812,6 +815,18 @@ footer {
 .assessment p.last-child {
   padding-bottom: 0;
 }
+.assessment--link {
+  font-size: 15px;
+  text-decoration: underline;
+}
+.assessment-header {
+  float: left;
+  width: 100%;
+}
+.assessment-body {
+  float: left;
+  width: 100%;
+}
 /*Terms*/
 .assessment--terms-list {
   float: left;
@@ -825,6 +840,42 @@ footer {
 .assessment--terms p {
   font-size: 10px;
   line-height: 1.8;
+}
+/*Status*/
+.assessment-status {
+  float: left;
+}
+.assessment-status--right {
+  float: right;
+}
+.assessment-status--text {
+  font-size: 15px;
+  line-height: 1.4;
+  text-decoration: underline;
+}
+/*Assessment List*/
+.assessment-list {
+  float: left;
+  width: 100%;
+  list-style: none;
+  padding: 0 0 30px;
+}
+.assessment-list li {
+  float: left;
+  width: 100%;
+  padding-bottom: 2px;
+  font-size: 13px;
+  color: #666666;
+}
+.assessment-list--label {
+  float: left;
+  width: 34%;
+  font-weight: bold;
+}
+.assessment-list--value {
+  float: left;
+  width: 60%;
+  padding-left: 3%;
 }
 /*========================
  * Terms Of Use popup box  
