@@ -8,11 +8,4 @@
             <img class="slogan" src="/assets/images/logos/slogan.gif" alt="Corporate Drive Safety Training" />
         </h1>
     </div>
-    <div class="container">
-        <nav class="nav-primary">
-            <ul>
-                <li><a>Login Page</a></li>
-            </ul>
-        </nav>
-    </div>
 </header>

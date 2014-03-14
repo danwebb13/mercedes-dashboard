@@ -4,96 +4,83 @@
  *
 **/
 
-#content-main {	
-		position: relative;
-	form {
-		float:left;
-		width: 100%;
+form {
+	float:left;
+	width: 100%;
 
-		input,
+	input,
+	label {
+		float: left;
+	}
+	label {
+		clear: both;
+		font-weight: bold;
+		text-align: left;
+		width: 60px;
+		padding-right: 20px;
+	}
+	input {
+		height: 11px;
+		padding: 3px;
+		.borderline;
+		width: 138px;
+		margin-right: 10px;
+		font-size: 10px;
+		
+		&:focus {
+			border: 1px solid @black;
+		}
+		
+		&#surname {
+			margin-right: 0;
+		}
+	}
+	.address-container {
+		float: left;
+		width: 100%;
+		margin-bottom: 5px;
+		input {
+			float: right;
+			width: 74.3%;
+			margin: 0 24px 10px 0;
+		}
+	}
+	.form-content,
+	.form-field {
+		clear: both;
+		float: left;
+		width: 100%;
+	}
+	.form-field {
+		margin-bottom: 15px;
+	}	
+
+}
+	
+.opt-in-checkbox-container {	
+	clear: both;
+	width: 100%;
+	.opt-in-checkbox {
+		clear: both;
+		float: left;
+		width: 100%;
+		margin-bottom: 5px;
 		label {
 			float: left;
-		}
-		label {
-			clear: both;
-			font-weight: bold;
+			display: inline;
+			width: 30%;
 			text-align: left;
-			width: 60px;
-			padding-right: 20px;
+			color: @opt-in-text;
+			font-weight: normal;
+			margin-bottom: 5px;
+			padding-right: 5px;
+			line-height: 1.3em;
 		}
 		input {
-			height: 11px;
-			padding: 3px;
-			.borderline;
-			width: 138px;
-			margin-right: 10px;
-			font-size: 10px;
-			
-			&:focus {
-				border: 1px solid @black;
-			}
-			
-			&#surname {
-				margin-right: 0;
-			}
-		}
-		.address-container {
 			float: left;
-			width: 100%;
-			margin-bottom: 5px;
-			input {
-				float: right;
-				width: 74.3%;
-				margin: 0 24px 10px 0;
-			}
-		}
-		.form-content,
-		.form-field {
-			clear: both;
-			float: left;
-			width: 100%;
-		}
-		.form-field {
-			margin-bottom: 15px;
-		}
-				
-		/* Form Footer */
-		.standard-box-footer {
-			input[type="submit"] {
-				float: left;
-				display: inline;
-				height: auto;
-				width: auto;
-				.standard-button;
-			}
-		}	
-	}
-	
-	.opt-in-checkbox-container {	
-		clear: both;
-		width: 100%;
-		.opt-in-checkbox {
-			clear: both;
-			float: left;
-			width: 100%;
-			margin-bottom: 5px;
-			label {
-				float: left;
-				display: inline;
-				width: 30%;
-				text-align: left;
-				color: @opt-in-text;
-				font-weight: normal;
-				margin-bottom: 5px;
-				padding-right: 5px;
-				line-height: 1.3em;
-			}
-			input {
-				float: left;
-				width: auto;
-				margin-top: 1px;
-				height: auto;
-			}
+			width: auto;
+			margin-top: 1px;
+			height: auto;
 		}
 	}
 }
@@ -147,4 +134,37 @@
     font-size: 11px;
     color: #ffffff; 
     border: 0;
+}
+
+
+/*Welcome styles*/
+#welcome {
+    color:@black;
+    border-style:solid;
+    border-width:5px;
+	h3 {
+    	color:@black;
+	}
+}
+
+
+
+/*Tick Box Container*/
+#content-main form .tickbox-container label {
+  float: left;
+  margin: 0 0px 10px 0;
+  width:350px;
+}
+
+#content-main form .tickbox-container input {
+  float: left;
+  padding-right:0px;
+  margin: 0 24px 10px 0;
+}
+
+
+/*Small Print*/
+.smallprint label {
+	width:400px;
+	font-size:30px;
 }

@@ -31,28 +31,19 @@ header {
 }
 
 
-/* Login top section with Portrait */
-.login-wrapper-top {
-	clear: both;
-	float: left;
-	width: 100%;
-	a {
-		float: left;
-		display: block;
-		padding: 6px 25px 10px 0;
-		margin: 10px 20px 5px;
-		font-size: 10px;
-		color: @brand-colour;
-		font-weight: bold;
-		span {
-			float: left;
-			display: inline;
-		}
-		.icon-portrait-logged-out,
-		.icon-portrait-logged-in {
-			display: inline;
-			width: 16px;
-			height: 16px;
-		}	
+.toolbar {
+	float:left;
+	width:900;
+	padding:0 20px 10px;
+}
+
+/* Logged in user */
+.toolbar--user {
+	font-size:10px;
+	color:@link-light;
+	font-weight:bold;
+	padding-bottom:0;
+	&:hover {
+		color:@link-light-hover;
 	}
 }

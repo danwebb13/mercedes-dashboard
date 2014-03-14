@@ -8,8 +8,16 @@
 
     <body>
         <?php include 'elements/parts/header.php'; ?>
+
+        <div class="container">
+            <nav class="nav-primary">
+                <ul>
+                    <li><a>Login Page</a></li>
+                </ul>
+            </nav>
+        </div>
     	
-    	<!-- Main Content Wrapper -->
+    	<!-- Content -->
     	<div id="wrapper">
     		<div class="container">
 
@@ -24,7 +32,7 @@
                     </div>
 
                     <!-- Sidebar -->
-                    <div id="sidebar" class="sidebar-alt">
+                    <div class="sidebar sidebar-alt">
                         <div class="standard-box">
                             <div class="standard-box-header">
                                 <h4>
