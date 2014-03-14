@@ -1,0 +1,37 @@
+/* 
+ * 
+ * $Footer
+ *
+**/
+
+footer {
+	float:left;
+	width:900px;
+	padding:14px 20px;
+}
+
+.footer-items {
+	float:right;
+	padding-bottom:0;
+}
+.footer-item {
+	float:left;
+	padding:0 10px;
+	list-style:none;
+	border-right:1px solid @footer-divider;
+	&:last-child {
+		padding-right:0;
+		border-right:0;
+	}
+	a:hover {
+		color:@footer-text-hover;
+	}
+}
+.footer-item-text {
+	display:block;
+	color:@footer-text;
+	font-size:11px;
+	text-decoration:none;
+	padding-bottom:0;
+	line-height:1.4;
+}

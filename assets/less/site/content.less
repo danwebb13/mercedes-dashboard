@@ -1,0 +1,75 @@
+/* Main Content Containers */
+#content-main {
+	float: left;
+	display: inline-block;
+	width: 476px;
+	min-height: 188px;
+	margin: 20px;
+	.box-shadow;
+}	
+
+/* Home page Content box */
+#content-main.content-home {
+	width: 588px;
+	background-color:@content-home;
+	a.login-help {
+		float: right;	
+		font-size: 13px;
+		font-weight: bold;
+	}
+}
+
+/* Content for the Assessment pages */
+#content-main {
+	.content-assessment {
+		h2 {
+			float: left;
+			display: inline;
+			width: 270px;
+			margin-right: 10px;
+			padding: 0 0 14px;
+		}
+		p, a {
+			font-size: 15px;
+			span {
+				font-size: 10px;
+			}
+			&.last {
+				padding-bottom: 0;
+			}
+		}
+		
+		/* Assessment Status Ticked/Unticked Boxes */
+		.assessment-status a,
+		.assessment-status p,
+		a.begin {
+			float: left;
+			text-decoration: underline;
+			padding-bottom: 0;
+			span {
+				margin: 0 5px 0 0;
+				padding: 0;
+			}
+		}
+		.assessment-status {
+			float: left;
+			margin-top: 5px;
+			p,a {
+				line-height: 0.8em;
+			}
+			p {text-decoration: none;}
+		}	
+		
+		.assessment-body {
+			clear: both;	
+			a.begin {
+				float: right;
+				width: 156px;
+				span {
+					margin-top: 4px;
+					margin-right: 2px;
+				}
+			}
+		}		
+	}
+}	

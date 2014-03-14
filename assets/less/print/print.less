@@ -1,0 +1,146 @@
+/*=========================*/
+ /*	 Print Stylesheet
+/*=========================*/
+
+/* Import other styles */
+@import "normalize.less";
+@import "helpers.less";
+@import "base.less";
+@import "fonts.less";
+@import "icons.less";
+
+@import "header.less";
+@import "layout.less";
+@import "footer.less";
+
+@import "nav.less";
+
+@import "content.less";
+@import "forms.less";
+@import "terms-of-use.less";
+
+@import "sidebar.less";
+
+@import "spacers.less";
+
+
+/* Begin Print stylesheet amendments */
+html, body {
+	background: #fff;
+}
+
+@page 
+{
+    size: auto;   /* auto is the initial value */
+    margin: 0mm;  /* this affects the margin in the printer settings */
+}
+
+body 
+{
+    background-color: #fff; 
+    padding: 0;
+    margin: 0;  /* this affects the margin on the content before sending to printer */
+}
+
+
+header {
+	.container {
+		/* Slogan */
+		a.slogan {
+			text-indent: 0;
+			color: black;
+			font-size: 14px;
+			background: transparent;
+		}
+		/* Logo */
+		h1.logo {
+			a {
+				text-indent: 0;
+				background: transparent;			
+			}	
+		}
+	}	
+}
+
+#print-layout #wrapper {
+	margin-top: 20px;
+	#inner-container {
+		#content-main {		
+			h2,h4 {text-transform: uppercase;}
+			h2,h3,h4 {color: @brand-colour;}
+			h3,h4,h5 {font-size: 12px;}
+			h4 {padding-bottom: 10px;}
+			h5 {
+				padding-bottom: 3px;
+			}
+			
+			ul {	
+				margin-bottom: 20px;
+				li {
+					font-size: 12px;
+				}
+			}
+		
+			ul.risk-profile,
+			ul.question-list {
+				clear: both;
+				float: left;
+				width: 100%;
+				li {
+					clear: both;
+					float: left;
+					display: block;
+					width: 70%;
+					padding-bottom: 3px;
+					p {
+						padding: 0;
+						float: left;
+						display: inline;
+						width: 100%;
+						font-weight: bold;
+						span {
+							float: right;
+							font-weight: normal;
+							width: 60%;
+							text-align: left;
+						}
+					}
+				}	
+			}
+			
+			p {
+				.risk-rating {
+					margin-left: 20px;
+					font-weight: bold;
+					color: red;
+				}
+			}
+			
+			#questions-wrapper {
+				margin-top: 30px;
+				.question-container {
+					clear: both;
+					float: left;
+					width: 100%;
+					ul.question-list {
+						li {
+							width: 100%;
+							&.question-title {
+								p {
+									font-weight: bold;
+									color: @brand-colour;
+									span {font-weight: bold;}
+								}
+							}
+							p {
+								span {
+									width: 70%;
+								}
+							}
+						}
+					}
+				}
+			}
+		}	
+	}
+}

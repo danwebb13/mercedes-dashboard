@@ -1,0 +1,80 @@
+/*
+ *
+ * $Box - Consistent box styles
+ *
+**/
+
+/* white box with green border */
+.standard-box { 
+	float: left;
+	width:100%;
+	background: @standard-box-bg;
+	.borderline;	
+	.box-shadow;	
+	
+	.standard-box-header {
+		h2,h3,h4 {
+				font-size: 14px;
+				background:@heading-bg;
+				color:@heading-text-light;
+				.heading-padding;
+			a {
+				display: block;
+				padding-bottom: 0;
+				color:@heading-text-light;
+				font-size: 14px;
+				span {
+					margin-top: 4px;
+				}
+			}
+		}		
+	}
+	.standard-box-body {
+		.clearfix;
+		min-height: 150px;
+		.standard-padding;
+	}
+}
+
+/* green box with no border */
+#content-main.standard-box-alt {
+	background: @standard-box-bg-alt;	
+	.borderline;
+	min-height: 200px;
+}
+
+/* No container boxes - Blank page (for terms & policies etc.) */
+#content-main.standard-box-blank {
+	float: none;
+	position: relative;
+	width: 740px;
+	background: @standard-box-bg-blank;	
+	.box-shadow-none;	
+	border: 0;
+	margin: 0 80px;	
+	p,a {
+		font-size: 12px;
+	}
+	h2 {
+		color: @heading-bg;
+	}
+}
+
+/* commonly used footer for containers */
+.standard-box-footer {
+	float: left;
+	width: 100%;
+	padding: 0;
+	.borderline-top;
+	.standard-box-footer-inner {
+		float: left;
+		padding: 10px 20px;
+	}
+}
+/* brand colour alternative footer */
+.standard-box-alt-footer {
+	border-top: 1px solid @white;
+	.standard-box-alt-footer-inner {
+		float: right;
+	}
+}
