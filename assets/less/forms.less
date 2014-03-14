@@ -4,58 +4,67 @@
  *
 **/
 
-form {
+/*Form Field - wrap fields in this container to separate them*/
+.form-field {
+	float:left;
+	width:100%;
+	padding-bottom:14px;
+}
+
+
+/*Form Profile*/
+.form-profile {
 	float:left;
 	width: 100%;
-
-	input,
-	label {
-		float: left;
-	}
-	label {
-		clear: both;
-		font-weight: bold;
-		text-align: left;
-		width: 60px;
-		padding-right: 20px;
-	}
-	input {
-		height: 11px;
-		padding: 3px;
-		.borderline;
-		width: 138px;
-		margin-right: 10px;
-		font-size: 10px;
-		
-		&:focus {
-			border: 1px solid @black;
-		}
-		
-		&#surname {
-			margin-right: 0;
-		}
-	}
-	.address-container {
-		float: left;
-		width: 100%;
-		margin-bottom: 5px;
-		input {
-			float: right;
-			width: 74.3%;
-			margin: 0 24px 10px 0;
-		}
-	}
-	.form-content,
-	.form-field {
-		clear: both;
-		float: left;
-		width: 100%;
-	}
-	.form-field {
-		margin-bottom: 15px;
-	}	
-
 }
+
+.form-profile--label {
+	clear:left;
+	float:left;
+	width:25%;
+	padding-right:2%;
+	font-size:11px;
+	font-weight:bold;
+	line-height:1.8;
+}
+
+.form-profile--input {
+	float:right;
+	width:70%;
+	height:11px;
+	padding:4px;
+	border:1px solid @form-profile-input-border;
+	font-size:10px;
+	&:focus {
+		border: 1px solid @black;
+	}
+	&#surname {
+		margin-right: 0;
+	}
+}
+.form-profile--input-inline {
+	width:33%;
+	margin-right:2%;
+}
+.form-profile--input-inline-last { margin-right:0; }
+.form-profile--input-compact {
+	margin-bottom:8px;
+}
+
+.form-profile--select {
+	clear:right;
+	float:left;
+	width:138px;
+	font-size:11px;	
+}
+
+/*Required Field star*/
+.require {
+	color:@required;
+	border:none;
+}
+
+
 	
 .opt-in-checkbox-container {	
 	clear: both;
@@ -85,13 +94,6 @@ form {
 	}
 }
 
-
-/*Form Field - wrap fields in this container to separate them*/
-.form-field {
-	float:left;
-	width:100%;
-	padding-bottom:10px;
-}
 
 
 /*Login Form*/
