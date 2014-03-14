@@ -432,6 +432,12 @@ ol ol li {
   width: 138px;
   font-size: 11px;
 }
+/*Hint*/
+.form-profile--hint {
+  float: right;
+  width: 72%;
+  font-size: 10px;
+}
 /*Required Field star*/
 .require {
   color: #ff0000;
