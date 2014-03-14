@@ -216,12 +216,6 @@ textarea {
 .borderline-top {
   border-top: 1px solid #92959b;
 }
-.main-nav-border {
-  border: 1px solid #92959b;
-}
-.main-nav-border-hover {
-  border: 1px solid #f2f2f2;
-}
 /*============
  * Shadows 
  * =========== */
@@ -292,7 +286,7 @@ h5 {
   font-family: Verdana, Arial, Helvetica, "Lucida Grande", sans-serif;
   padding: 0 0 14px 0;
   margin: 0;
-  color: #797c82;
+  color: #666666;
 }
 h1 {
   font-size: 22px;
@@ -341,7 +335,7 @@ ol ol li {
   margin-bottom: 0;
 }
 .heading {
-  color: #797c82;
+  color: #666666;
 }
 .heading--bold {
   font-weight: bold;
@@ -417,6 +411,11 @@ ol ol li {
 .form-profile--label-strong {
   font-size: 12px;
   font-weight: bold;
+  color: #666666;
+}
+.form-profile--label-small {
+  font-size: 10px;
+  font-weight: normal;
   color: #666666;
 }
 .form-profile--input {
@@ -592,6 +591,9 @@ ol ol li {
   border: 0;
   font-size: 11px;
   cursor: pointer;
+}
+.button--right {
+  float: right;
 }
 /* 
  * 
@@ -794,72 +796,35 @@ footer {
   box-shadow: 2px 4px 3px -2px rgba(102, 102, 102, 0.7);
 }
 /* Home page Content box */
-#content-main.content-home {
+.content-home {
   width: 588px;
   background-color: #ffffff;
 }
-#content-main.content-home a.login-help {
+.content-home a.login-help {
   float: right;
   font-size: 13px;
   font-weight: bold;
 }
 /* Content for the Assessment pages */
-#content-main .content-assessment {
-  /* Assessment Status Ticked/Unticked Boxes */
-}
-#content-main .content-assessment h2 {
-  float: left;
-  display: inline;
-  width: 270px;
-  margin-right: 10px;
-  padding: 0 0 14px;
-}
-#content-main .content-assessment p,
-#content-main .content-assessment a {
+.assessment p {
   font-size: 15px;
 }
-#content-main .content-assessment p span,
-#content-main .content-assessment a span {
+.assessment p.last-child {
+  padding-bottom: 0;
+}
+/*Terms*/
+.assessment--terms-list {
+  float: left;
+  width: 100%;
+  padding-bottom: 20px;
+}
+.assessment--terms {
+  float: left;
+  width: 100%;
+}
+.assessment--terms p {
   font-size: 10px;
-}
-#content-main .content-assessment p.last,
-#content-main .content-assessment a.last {
-  padding-bottom: 0;
-}
-#content-main .content-assessment .assessment-status a,
-#content-main .content-assessment .assessment-status p,
-#content-main .content-assessment a.begin {
-  float: left;
-  text-decoration: underline;
-  padding-bottom: 0;
-}
-#content-main .content-assessment .assessment-status a span,
-#content-main .content-assessment .assessment-status p span,
-#content-main .content-assessment a.begin span {
-  margin: 0 5px 0 0;
-  padding: 0;
-}
-#content-main .content-assessment .assessment-status {
-  float: left;
-  margin-top: 5px;
-}
-#content-main .content-assessment .assessment-status p,
-#content-main .content-assessment .assessment-status a {
-  line-height: 0.8em;
-}
-#content-main .content-assessment .assessment-status p {
-  text-decoration: none;
-}
-#content-main .content-assessment .assessment-body {
-  clear: both;
-}
-#content-main .content-assessment .assessment-body a.begin {
-  float: right;
-  width: 156px;
-}
-#content-main .content-assessment .assessment-body a.begin span {
-  margin-top: 4px;
-  margin-right: 2px;
+  line-height: 1.8;
 }
 /*========================
  * Terms Of Use popup box  
