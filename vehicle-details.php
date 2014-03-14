@@ -93,9 +93,7 @@
                                 </div> 
                             </div>
                             <div class="standard-box-footer">
-                                <div class="standard-box-footer-inner">
-                                    <input class="button" type="submit" value="Next" id="Next" />
-                                </div>
+                                <input class="button" type="submit" value="Next" id="Next" />
                             </div>
                         </form>
                     </div>

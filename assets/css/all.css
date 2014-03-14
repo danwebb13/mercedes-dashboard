@@ -402,6 +402,23 @@ ol ol li {
   font-weight: bold;
   line-height: 1.8;
 }
+.form-profile--label-heading {
+  width: 100%;
+  padding-bottom: 14px;
+  font-size: 12px;
+  color: #666666;
+}
+.form-profile--label-right {
+  clear: right;
+  width: 93%;
+  padding-right: 0;
+  padding-left: 2%;
+}
+.form-profile--label-strong {
+  font-size: 12px;
+  font-weight: bold;
+  color: #666666;
+}
 .form-profile--input {
   float: right;
   width: 70%;
@@ -435,6 +452,10 @@ ol ol li {
   float: left;
   width: 138px;
   font-size: 11px;
+}
+.form-profile--checkbox {
+  float: left;
+  width: 3%;
 }
 /*Hint*/
 .form-profile--hint {
@@ -570,6 +591,7 @@ ol ol li {
   color: #ffffff;
   border: 0;
   font-size: 11px;
+  cursor: pointer;
 }
 /* 
  * 
@@ -885,6 +907,7 @@ footer {
   color: #ffffff;
   border: 0;
   font-size: 11px;
+  cursor: pointer;
 }
 #termspopup {
   background-color: #ffffff;
@@ -977,19 +1000,19 @@ footer {
 /* commonly used footer for containers */
 .standard-box-footer {
   float: left;
-  width: 100%;
-  padding: 0;
+  width: 94%;
+  padding: 10px 3%;
   border-top: 1px solid #92959b;
-}
-.standard-box-footer .standard-box-footer-inner {
-  float: left;
-  padding: 10px 20px;
 }
 /* brand colour alternative footer */
 .standard-box-alt-footer {
   border-top: 1px solid #ffffff;
 }
 .standard-box-alt-footer .standard-box-alt-footer-inner {
+  float: right;
+}
+/*Page/Box Navigation*/
+.nav-page {
   float: right;
 }
 /* 

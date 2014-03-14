@@ -41,10 +41,8 @@
                         </div>
 
                         <div class="standard-box-footer">
-                            <div class="standard-box-footer-inner">
-                                <input class="button" type="submit" value="Next" id="Next" name="Command" />
-                                <input class="button" type="submit" value="Log Out" id="Logout" name="Command" />
-                            </div>
+                            <input class="button" type="submit" value="Next" id="Next" name="Command" />
+                            <input class="button" type="submit" value="Log Out" id="Logout" name="Command" />
                         </div>
                         </form>
                     </div>
