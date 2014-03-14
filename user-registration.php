@@ -8,12 +8,7 @@
 
     <body>
         <?php include 'elements/parts/header.php'; ?>
-
-        <div class="container">
-            <div class="toolbar">
-                <a class="toolbar--user" href="/members/myprofile" title="logged in">Paul@newcompany.com</a>
-            </div>
-        </div>
+        <?php include 'elements/modules/toolbar.php'; ?>
 
         <div class="container">
             <nav class="nav-primary">
@@ -31,7 +26,7 @@
                                                              
                     <div id="content-main" class="standard-box">
                         <div class="standard-box-header">
-                            <h2 class="heading--box">User registration - Step 1: About you</h2>
+                            <h2 class="heading--bold">User registration - Step 1: About you</h2>
                         </div>
 
                         <form class="form-profile" action="/Members/Registration?codekitCB=416498280.308198" id="form0" method="post">
