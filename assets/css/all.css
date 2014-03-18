@@ -5,7 +5,7 @@
 /*=========================*/
 /*
  *
- * $Base - Type Selectors and Path variables
+ * $Base - Path variables
  *
 **/
 html,
@@ -132,76 +132,6 @@ img {
     -webkit-text-size-adjust: none;
   }
 }
-html,
-button,
-input,
-select,
-textarea {
-  color: #222;
-}
-body {
-  font-size: 1em;
-  line-height: 1.4;
-}
-::-moz-selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
-::selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
-  padding: 0;
-}
-img {
-  vertical-align: middle;
-}
-fieldset {
-  border: 0;
-  margin: 0;
-  padding: 0;
-}
-textarea {
-  resize: vertical;
-}
-.chromeframe {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0;
-}
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-.hidden {
-  display: none !important;
-  visibility: hidden;
-}
-.visuallyhidden {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
-}
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
-  clip: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  position: static;
-  width: auto;
-}
 /* 
  * 
  * $Mixins
@@ -241,6 +171,7 @@ textarea {
 /* Greys */
 /* Blues */
 /*Reds*/
+/*Greens*/
 /* Brand Colour  */
 /*============
  * Containers 
@@ -257,9 +188,27 @@ textarea {
 /*==================== */
 /* Users   			   */
 /*==================== */
+/*================*
+ * Lists
+ *================*/
 /*==================== */
 /* Buttons   		   */
 /*==================== */
+/*================*
+ * Assistant
+ *================*/
+/*================*
+ * Progress Bar
+ *================*/
+/*================*
+ * Tables
+ *================*/
+/*==================*
+ * Dashboard Module
+ *==================*/
+/*==================*
+ * Notes
+ *==================*/
 /*==================== */
 /* Errors   		   */
 /*==================== */
@@ -278,6 +227,35 @@ textarea {
 .font-verdana {
   font-family: Verdana, Arial, Helvetica, "Lucida Grande", sans-serif;
 }
+/* Common Text Sizes */
+.type-xsmall {
+  font-size: 0.714em;
+}
+/*10px*/
+.type-small {
+  font-size: 0.857em;
+}
+/*12px*/
+.type-medium {
+  font-size: 1em;
+}
+/*14*/
+.type-large {
+  font-size: 1.143em;
+}
+/*16px*/
+.type-xlarge {
+  font-size: 1.714em;
+}
+/*24px*/
+.type-giga {
+  font-size: 2em;
+}
+/*28px*/
+.type-mega {
+  font-size: 2.429em;
+}
+/*34px*/
 h1,
 h2,
 h3,
@@ -285,8 +263,8 @@ h4,
 h5 {
   font-family: Verdana, Arial, Helvetica, "Lucida Grande", sans-serif;
   padding: 0 0 14px 0;
-  margin: 0;
   color: #666666;
+  line-height: 1.4;
 }
 h1 {
   font-size: 22px;
@@ -305,12 +283,12 @@ h5 {
 }
 p,
 a {
+  padding: 0 0 14px 0;
   font-family: Verdana, Arial, Helvetica, "Lucida Grande", sans-serif;
   font-size: 11px;
   color: #666666;
   letter-spacing: -0.03em;
-  padding: 0 0 14px 0;
-  margin: 0;
+  line-height: 1.4;
 }
 a {
   text-decoration: none;
@@ -322,6 +300,7 @@ form {
 ul li {
   font-family: Verdana, Arial, Helvetica, "Lucida Grande", sans-serif;
   list-style-type: none;
+  line-height: 1.4;
 }
 ol {
   font-family: Verdana, Arial, Helvetica, "Lucida Grande", sans-serif;
@@ -344,9 +323,40 @@ ol ol li {
 .heading--inline {
   float: left;
 }
-/*Intros*/
-.intro p {
+/*Sub Heading*/
+.sub-heading {
+  font-size: 1em;
+  color: #000000;
+}
+/*Lead intro copy*/
+.lead p {
   font-size: 15px;
+}
+/* Breadcrumbs */
+.breadcrumb {
+  float: left;
+  width: 100%;
+  padding-bottom: 14px;
+  color: #797c82;
+  text-decoration: none;
+}
+/* Custom Links */
+.link-pdf {
+  font-size: 0.857em;
+  color: #000000;
+  padding-bottom: 0;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+}
+.link-pdf img {
+  float: left;
+  width: 16px;
+  height: auto;
+}
+.link-pdf span {
+  float: left;
+  margin: 3px 0 0 5px;
 }
 /*=========== */
 /* Icons      */
@@ -470,10 +480,11 @@ ol ol li {
   width: 72.5%;
   margin-top: 2px;
   font-size: 10px;
+  padding-bottom: 0;
 }
 /*Required Field star*/
 .require {
-  color: #ff0000;
+  color: #9f0002;
   border: none;
 }
 .opt-in-checkbox-container {
@@ -508,15 +519,6 @@ ol ol li {
   padding: 30px 20px;
   zoom: 1;
 }
-.form-login:before {
-  content: '';
-  display: block;
-}
-.form-login:after {
-  content: '';
-  display: table;
-  clear: both;
-}
 .form-login:after {
   display: block;
   visibility: hidden;
@@ -546,6 +548,8 @@ ol ol li {
 }
 .form-login--forgotten-pw {
   margin-right: 9px;
+  line-height: 2;
+  text-decoration: underline;
 }
 .form-login--submit {
   float: right;
@@ -604,6 +608,40 @@ ol ol li {
 .button--right {
   float: right;
 }
+/*
+ *
+ * 3 Columns
+ *
+ *   <div class="l-col3">
+ *      <div class="l-col3-col l-col3-col1"></div>
+ *      <div class="l-col3-col l-col3-col2"></div>
+ *      <div class="l-col3-col l-col3-col3"></div>
+ *   </div>
+ *
+**/
+.l-col3 {
+  margin: 0 auto;
+  width: 100%;
+  zoom: 1;
+}
+.l-col3:after {
+  display: block;
+  visibility: hidden;
+  height: 0;
+  clear: both;
+  content: ".";
+}
+.l-col3-col {
+  clear: none;
+  float: left;
+  width: 29.61962962963%;
+  /* 266.66666666666667 / 900 */
+  padding-left: 5.555555555556%;
+  /* 50 / 900 */
+}
+.l-col3-col1 {
+  padding-left: 0;
+}
 /* 
  * 
  * $Header
@@ -645,7 +683,7 @@ header {
   padding-bottom: 0;
 }
 .toolbar--user:hover {
-  color: #00adef;
+  color: #00ccff;
 }
 /* Main Content Containers */
 html,
@@ -670,15 +708,6 @@ body {
   padding-right: 20px;
   zoom: 1;
 }
-.container:before {
-  content: '';
-  display: block;
-}
-.container:after {
-  content: '';
-  display: table;
-  clear: both;
-}
 .container:after {
   display: block;
   visibility: hidden;
@@ -698,15 +727,6 @@ body {
   background-repeat: no-repeat;
   background-position: top center;
   zoom: 1;
-}
-.page:before {
-  content: '';
-  display: block;
-}
-.page:after {
-  content: '';
-  display: table;
-  clear: both;
 }
 .page:after {
   display: block;
@@ -766,7 +786,7 @@ footer {
   border-right: 0;
 }
 .footer-item a:hover {
-  color: #00adef;
+  color: #00ccff;
 }
 .footer-item-text {
   display: block;
@@ -924,15 +944,6 @@ footer {
   min-height: 150px;
   padding: 20px;
 }
-.standard-box .standard-box-body:before {
-  content: '';
-  display: block;
-}
-.standard-box .standard-box-body:after {
-  content: '';
-  display: table;
-  clear: both;
-}
 .standard-box .standard-box-body:after {
   display: block;
   visibility: hidden;
@@ -998,7 +1009,7 @@ footer {
   float: left;
   width: 200px;
   font-weight: bold;
-  color: #ff0000;
+  color: #9f0002;
 }
 .forgottenlink {
   float: left;
@@ -1093,6 +1104,381 @@ footer {
   width: 60%;
   padding-left: 3%;
 }
+/* 
+ * 
+ * $Intro
+ *
+ * The Dashboard intro section
+ *
+**/
+.intro {
+  float: left;
+  width: 64.7%;
+  padding-bottom: 10px;
+}
+.intro p {
+  font-size: 1em;
+}
+.intro-compact {
+  width: 455px;
+}
+.intro--heading-large {
+  font-size: 2em;
+}
+/* 
+ * 
+ * $Assistant
+ *
+ * The assistant block -
+ * containing help, status, links
+ * and short profile details.
+ *
+**/
+.assistant {
+  float: right;
+  width: 236px;
+  min-height: 105px;
+  padding: 12px 10px;
+  background-color: #000000;
+}
+.assistant p {
+  color: #ffffff;
+}
+.assistant p:last-child {
+  padding-bottom: 0;
+}
+.assistant--heading {
+  font-size: 1em;
+  padding-bottom: 10px;
+  color: #00ccff;
+  text-transform: uppercase;
+}
+.assistant--link {
+  clear: both;
+  float: right;
+  padding-bottom: 0;
+  font-size: 0.857em;
+  color: #00ccff;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+/* 
+ * 
+ * $Progress
+ *
+ * Jquery UI progress bar
+ *
+**/
+.progress {
+  position: relative;
+  float: left;
+  width: 61.111111111111%;
+  /*550 / 900*/
+  padding-bottom: 20px;
+}
+.progress-label {
+  float: left;
+  margin-right: 7px;
+  font-size: 0.857em;
+  color: #999999;
+  font-weight: bold;
+  line-height: 2.2;
+}
+.progress-value {
+  position: absolute;
+  left: 50%;
+  top: 7px;
+  font-weight: bold;
+  text-shadow: 1px 1px 0 #fff;
+  z-index: 1;
+}
+.ui-progressbar {
+  position: relative;
+}
+.ui-widget {
+  font-size: 0.857em !important;
+}
+/* 
+ * 
+ * $DataTable
+ *
+ * The styles for the data tables on the dashboard.
+ *
+**/
+/* Tab jquery ui overrides */
+.ui-tabs {
+  margin-bottom: 20px;
+}
+.ui-tabs-anchor {
+  font-size: 1em;
+  font-weight: bold;
+}
+.data-table {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.data-table th {
+  padding: 12px;
+  color: #003366;
+  font-weight: bold;
+  text-align: center;
+}
+.data-table td {
+  padding: 12px 0;
+  text-align: center;
+}
+.data-table td p,
+.data-table td a {
+  line-height: 1.6;
+}
+.data-table td p {
+  color: #666666;
+  padding-bottom: 0;
+}
+.data-table td a {
+  color: #003366;
+  /*Have to remove jquery anchor styles*/
+}
+.data-table td a:hover {
+  color: #00ccff;
+}
+.data-table th,
+.data-table td {
+  border-bottom-style: solid;
+  border-bottom-color: #003366;
+}
+.data-table th {
+  border-bottom-width: 2px;
+}
+.data-table td {
+  border-bottom-width: 1px;
+}
+.data-table--driver-profile td p,
+.data-table--driver-profile td a {
+  font-size: 11px;
+}
+.data-table--driver-profile .t-col1 {
+  width: 18px;
+}
+.data-table--driver-profile .t-col2 {
+  width: 110px;
+}
+.data-table--driver-profile .t-col3 {
+  width: 240px;
+}
+.data-table--driver-profile .t-col4 {
+  width: 42px;
+}
+.data-table--driver-profile .t-col5 {
+  width: 42px;
+}
+.data-table--driver-profile .t-col6 {
+  width: 42px;
+}
+.data-table--driver-profile .t-col7 {
+  width: 88px;
+}
+.data-table--driver-profile .t-col8 {
+  width: 166px;
+}
+.data-table--driver-reports td p,
+.data-table--driver-reports td a {
+  font-size: 12px;
+}
+.data-table--driver-reports .t-col1 {
+  width: 18px;
+}
+.data-table--driver-reports .t-col2 {
+  width: 110px;
+}
+.data-table--driver-reports .t-col3 {
+  width: 240px;
+}
+.data-table--driver-reports .t-col4 {
+  width: 120px;
+}
+.data-table--driver-reports .t-col5 {
+  width: 166px;
+}
+.data-table--download {
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 0;
+  width: 18px;
+}
+/* 
+ * 
+ * $DashboardModule
+ *
+**/
+.dash-mod {
+  position: relative;
+  overflow: hidden;
+  float: left;
+  width: 225px;
+  padding: 20px;
+  border: 1px solid #797c82;
+  cursor: pointer;
+  text-decoration: none;
+}
+.dash-mod:hover {
+  color: #666666;
+  text-decoration: none;
+}
+.dash-mod--heading {
+  float: left;
+  width: 100%;
+  padding-bottom: 10px;
+  font-size: 28px;
+  color: #00ccff;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.dash-mod--heading:hover {
+  color: #00ccff;
+}
+.dash-mod--icon {
+  display: block;
+  width: 100%;
+  padding-bottom: 20px;
+}
+.dash-mod--action {
+  clear: both;
+  float: left;
+  padding-bottom: 10px;
+  font-size: 14px;
+  text-decoration: underline;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #003366;
+}
+.dash-mod--status-label {
+  float: left;
+  width: 100%;
+  padding-bottom: 5px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.dash-mod--status-complete {
+  color: #305e02;
+}
+.dash-mod--status-incomplete {
+  color: #9f0002;
+}
+.dash-mod--link {
+  text-decoration: underline;
+}
+.dash-mod--text {
+  clear: both;
+  float: left;
+  width: 100%;
+  font-size: 12px;
+}
+.dash-mod--overlay {
+  position: absolute;
+  top: 0;
+  right: 100%;
+  width: 100%;
+  height: 100%;
+  background-position: 50% 38%;
+  background-repeat: no-repeat;
+  background-color: #000000;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 1;
+}
+.dash-mod--overlay-video {
+  background-image: url("/assets/images/icons/icon-video-white.png");
+}
+.dash-mod--overlay-notes {
+  background-image: url("/assets/images/icons/icon-document-white.png");
+}
+.dash-mod--overlay-test {
+  background-image: url("/assets/images/icons/icon-pencil-white.png");
+}
+.dash-mod--video {
+  background-position: 50% 40%;
+}
+.dash-mod--video:hover .dash-mod--overlay-video {
+  right: 0;
+  -webkit-transition: all 0.4s ease-in;
+  -moz-transition: all 0.4s ease-in;
+  -ms-transition: all 0.4s ease-in;
+  -o-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+}
+.dash-mod--notes:hover .dash-mod--overlay-notes {
+  right: 0;
+  -webkit-transition: all 0.4s ease-in;
+  -moz-transition: all 0.4s ease-in;
+  -ms-transition: all 0.4s ease-in;
+  -o-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+}
+.dash-mod--test {
+  background-position: 50% 40%;
+}
+.dash-mod--test:hover .dash-mod--overlay-test {
+  right: 0;
+  -webkit-transition: all 0.4s ease-in;
+  -moz-transition: all 0.4s ease-in;
+  -ms-transition: all 0.4s ease-in;
+  -o-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+}
+.dash-mod--overlay-text {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  font-size: 16px;
+  color: #ffffff;
+  text-align: center;
+  z-index: 1;
+}
+.dash-mod--overlay-text-video {
+  top: 61%;
+}
+.dash-mod--overlay-text-notes {
+  top: 64%;
+}
+.dash-mod--overlay-text-test {
+  top: 62%;
+}
+/* 
+ * 
+ * $Notes
+ *
+**/
+.notes {
+  float: left;
+  width: 64.5%;
+}
+.notes--list {
+  float: left;
+  width: 100%;
+  padding-bottom: 0;
+}
+.notes--list li {
+  font-size: 14px;
+  padding-bottom: 14px;
+  margin-left: 16px;
+  padding-left: 0;
+}
+.notes--heading {
+  padding-bottom: 10px;
+  margin-bottom: 14px;
+  font-size: 1.143em;
+  border-bottom: 2px solid #003366;
+}
+/* 
+ * 
+ * $Dialog
+ *
+ * The popup dialog box
+ *
+**/
+.ui-widget-overlay {
+  background-image: none !important;
+}
 /*==================== */
 /* Spacing			   */
 /*==================== */
@@ -1108,3 +1494,12 @@ footer {
 .last {
   margin: 0;
 }
+/*
+ *
+ * $Temporary
+ *
+ * For hot fixes.
+ * If you need to quickly apply something, do it here.
+ * This can then be put into the proper LESS file later.
+ *
+**/

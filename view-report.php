@@ -36,7 +36,7 @@
                                 </div>  
                             </div>
                             <div class="assessment-body">
-                                <div class="intro">
+                                <div class="lead">
                                     <p>Thank you, you have now completed your Driver Profile and your results have been saved. To download and view your report, click on the View Report link above.</p>
                                     <p>Find out more about your Driver Profile by downloading the <a class="assessment--link" href="http://www.mbdriverprofile.com/Understanding_Your_Driver_Profile.pdf" target="_blank">Understanding Your Driver Profile PDF</a> here.</p>
                                 </div>

@@ -62,13 +62,13 @@
                                 <div class="form-field">                                    
                                     <label class="form-profile--label" for="name">Model:<abbr title="Required Field" class="require">*</abbr></label>
                                     <input class="form-profile--input form-profile--input-small" id="VehicleModel" name="VehicleModel" type="text" value="" /><br clear=all> 
-                                     <div class="form-profile--hint">If you do not have your vehicle model<br /> information, please enter Unknown</div>
+                                     <p class="form-profile--hint">If you do not have your vehicle model<br /> information, please enter Unknown</p>
                                 </div>
 
                                 <div class="form-field">                                    
                                     <label class="form-profile--label" for="name">Registration:<abbr title="Required Field" class="require">*</abbr></label>
                                     <input class="form-profile--input form-profile--input-small" id="VehicleRegistration" name="VehicleRegistration" type="text" value="" /><br clear=all> 
-                                    <div class="form-profile--hint">If you do not have your vehicle registration<br /> information, please enter Unknown</div>
+                                    <p class="form-profile--hint">If you do not have your vehicle registration<br /> information, please enter Unknown</p>
                                 </div>
 
                                 <div class="form-field">                                    

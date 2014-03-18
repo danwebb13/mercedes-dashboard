@@ -1,0 +1,91 @@
+/* 
+ * 
+ * $DataTable
+ *
+ * The styles for the data tables on the dashboard.
+ *
+**/
+
+/* Tab jquery ui overrides */
+.ui-tabs {
+	margin-bottom:20px;
+}
+.ui-tabs-anchor {
+	.type-medium;
+	font-weight:bold;
+}
+
+
+.data-table {
+	width:100%;
+	margin-bottom:20px;
+
+	th {
+		padding:12px;
+		color:@data-table-heading;
+		font-weight:bold;
+		text-align:center;
+	}
+	td {
+		padding:12px 0;
+		text-align:center;
+		p,a {
+			line-height:1.6;
+		}
+		p {
+			color:@data-table-text;
+			padding-bottom:0;
+		}
+		a {
+			color:@link; /*Have to remove jquery anchor styles*/
+			&:hover {
+				color:@link-hover;
+			}
+		}
+	}
+
+	th,td {
+		border-bottom-style:solid;
+		border-bottom-color:@data-table-divider;
+	}
+	th { border-bottom-width:2px; }
+	td { border-bottom-width:1px; }
+}
+
+.data-table--driver-profile {
+	td {
+		p,a {
+			font-size:11px;
+		}
+	}
+	.t-col1 { width:18px; }
+	.t-col2 { width:110px; }
+	.t-col3 { width:240px; }
+	.t-col4 { width:42px; }
+	.t-col5 { .t-col4; }
+	.t-col6 { .t-col4; }
+	.t-col7 { width:88px; }
+	.t-col8 { width:166px; }
+}
+
+
+.data-table--driver-reports {
+	td {
+		p,a {
+			font-size:12px;
+		}
+	}
+	.t-col1 { width:18px; }
+	.t-col2 { width:110px; }
+	.t-col3 { width:240px; }
+	.t-col4 { width:120px; }
+	.t-col5 { width:166px; }
+}
+
+
+.data-table--download {
+	display:block;
+	margin:0 auto;
+	padding-bottom:0;
+	width:18px;
+}

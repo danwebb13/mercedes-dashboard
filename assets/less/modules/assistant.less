@@ -1,0 +1,40 @@
+/* 
+ * 
+ * $Assistant
+ *
+ * The assistant block -
+ * containing help, status, links
+ * and short profile details.
+ *
+**/
+
+.assistant {
+	float:right;
+	width:236px;
+	min-height:105px;
+	padding:12px 10px;
+	background-color:@assistant;
+	p {
+		color:@assistant-text;
+		&:last-child {
+			padding-bottom:0;
+		}
+	}
+}
+
+.assistant--heading {
+	.type-medium;
+	padding-bottom:10px;
+	color:@assistant-heading;
+	text-transform:uppercase;
+}
+
+.assistant--link {
+	clear:both;
+	float:right;
+	padding-bottom:0;
+	.type-small;
+	color:@assistant-link;
+	text-decoration:underline;
+	text-transform:uppercase;
+}

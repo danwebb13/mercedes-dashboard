@@ -38,7 +38,7 @@
                                         <i class="icon-arrow"></i> 
                                         Click here to begin
                                     </a>
-                                    <div class="intro">
+                                    <div class="lead">
                                         <p>Welcome to your Driver Profile</p>
                                         <p>The Mercedes-Benz Driver Profile captures information about you, the vehicle you use and the journeys you make. Please click the above link to begin.</p>
                                     </div>
