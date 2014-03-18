@@ -84,8 +84,6 @@
         </div>
 
         <?php include 'elements/parts/footer.php'; ?>
-
-        <!-- Javascript -->
         <?php include 'elements/parts/js.php'; ?>
 
     </body>
