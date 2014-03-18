@@ -20,7 +20,7 @@
 
 
 body {
-    .font-arial;
+    .font-verdana;
     font-size:14px; /* base font size */
    	line-height:1.4;
 }
@@ -41,7 +41,6 @@ p,a {
 	padding:0 0 14px 0;	
 	font-size:11px;
 	color:@body-text;
-	letter-spacing:-0.03em;
 	line-height:1.4;
 }
 a {
@@ -70,8 +69,12 @@ ol {
 
 /*Sub Heading*/
 .sub-heading {
+    .font-arial;
     .type-medium;
     color:@sub-heading;
+    font-weight:bold;
+    line-height:1;
+    padding-bottom:8px;
 }
 
 /*Lead intro copy*/
@@ -86,6 +89,7 @@ ol {
     float:left;
     width:100%;
     padding-bottom:14px;
+    .font-arial;
     .type-small;
     color:@breadcrumb;
     text-decoration:none;
@@ -95,8 +99,15 @@ ol {
     }
 }
 
+/*Login link*/
+.login-help {
+    float:right;
+    line-height:1.8;
+}
+
 /* Custom Links */
 .link-pdf {
+    .font-arial;
     .type-small;
     color:@link-pdf;
     padding-bottom:0;

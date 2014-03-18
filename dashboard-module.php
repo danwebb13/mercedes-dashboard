@@ -8,7 +8,7 @@
 
     <body>
         <?php include 'elements/parts/header.php'; ?>
-        <?php include 'elements/parts/nav2.php'; ?>
+        <?php include 'elements/parts/nav3.php'; ?>
 
         <!-- Content -->
         <div class="wrapper">

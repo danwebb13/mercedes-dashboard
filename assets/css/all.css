@@ -257,7 +257,7 @@ img {
 }
 /*34px*/
 body {
-  font-family: Arial, Helvetica, "Lucida Grande", sans-serif;
+  font-family: Verdana, Arial, Helvetica, "Lucida Grande", sans-serif;
   font-size: 14px;
   /* base font size */
   line-height: 1.4;
@@ -291,7 +291,6 @@ a {
   padding: 0 0 14px 0;
   font-size: 11px;
   color: #666666;
-  letter-spacing: -0.03em;
   line-height: 1.4;
 }
 a {
@@ -328,8 +327,12 @@ ol ol li {
 }
 /*Sub Heading*/
 .sub-heading {
+  font-family: Arial, Helvetica, "Lucida Grande", sans-serif;
   font-size: 1em;
   color: #000000;
+  font-weight: bold;
+  line-height: 1;
+  padding-bottom: 8px;
 }
 /*Lead intro copy*/
 .lead p {
@@ -340,6 +343,7 @@ ol ol li {
   float: left;
   width: 100%;
   padding-bottom: 14px;
+  font-family: Arial, Helvetica, "Lucida Grande", sans-serif;
   font-size: 0.857em;
   color: #797c82;
   text-decoration: none;
@@ -348,8 +352,14 @@ ol ol li {
   color: #00ccff;
   text-decoration: underline;
 }
+/*Login link*/
+.login-help {
+  float: right;
+  line-height: 1.8;
+}
 /* Custom Links */
 .link-pdf {
+  font-family: Arial, Helvetica, "Lucida Grande", sans-serif;
   font-size: 0.857em;
   color: #000000;
   padding-bottom: 0;
@@ -396,6 +406,52 @@ ol ol li {
 }
 .icon-portrait-logged-in {
   background-position: -32px 0;
+}
+.icon-tick {
+  display: block;
+  border: none;
+  text-indent: -99999px;
+  overflow: hidden;
+  width: 18px;
+  height: 18px;
+  background: url("/assets/images/icons/icon-sprite-ticks.gif") 0 0 no-repeat;
+  margin: 0 auto;
+}
+.icon-tick:hover {
+  border: none;
+}
+.icon-tick-complete {
+  background-position: 0 0;
+}
+.icon-tick-in-progress {
+  background-position: -18px 0;
+}
+.icon-tick-unstarted {
+  background-position: -36px 0;
+}
+.icon-arrow-right {
+  display: block;
+  border: none;
+  text-indent: -99999px;
+  overflow: hidden;
+  width: 18px;
+  height: 18px;
+  background: url("/assets/images/icons/icon-arrow-right.png") 0 0 no-repeat;
+}
+.icon-arrow-right:hover {
+  border: none;
+}
+.icon-pdf {
+  display: block;
+  border: none;
+  text-indent: -99999px;
+  overflow: hidden;
+  width: 18px;
+  height: 18px;
+  background: url("/assets/images/icons/icon-pdf-small.png") 0 0 no-repeat;
+}
+.icon-pdf:hover {
+  border: none;
 }
 /* 
  * 
@@ -598,6 +654,41 @@ ol ol li {
 }
 /* 
  * 
+ * $Lists
+ *
+ * Styling the lists on the frontend.
+ *
+**/
+.details {
+  float: left;
+  width: 100%;
+  padding-bottom: 10px;
+}
+.detail {
+  float: left;
+  width: 100%;
+  list-style: none;
+  padding-bottom: 3px;
+}
+.detail:last-child {
+  padding-bottom: 0;
+}
+.detail--label {
+  float: left;
+  width: 44.067796610169%;
+  /*104 / 236*/
+  font-size: 0.857em;
+  color: #ffffff;
+}
+.detail--value {
+  float: right;
+  width: 45%;
+  padding-left: 5%;
+  font-size: 0.857em;
+  color: #ffffff;
+}
+/* 
+ * 
  * $Buttons
  *
 **/
@@ -612,6 +703,19 @@ ol ol li {
   border: 0;
   font-size: 11px;
   cursor: pointer;
+}
+.button-play {
+  margin: 0 auto;
+  padding: 0;
+  display: block;
+  width: 18px;
+  height: 18px;
+  border: 0;
+  background-color: #003366;
+  cursor: pointer;
+}
+.button-play:hover {
+  background-color: #999999;
 }
 .button--right {
   float: right;
@@ -756,6 +860,7 @@ body {
   width: 900px;
   padding-left: 20px;
   padding-right: 20px;
+  font-family: Arial, Helvetica, "Lucida Grande", sans-serif;
 }
 /*Sections*/
 section {
@@ -778,9 +883,6 @@ section {
 #content-main.content-home {
   width: 588px;
   background-color: #ffffff;
-}
-.login-help {
-  float: right;
 }
 /* 
  * 
@@ -1146,9 +1248,14 @@ footer {
   width: 455px;
 }
 .intro--heading {
-  font-size: 2em;
+  padding-bottom: 8px;
+  font-size: 1.714em;
   color: #003366;
   font-weight: bold;
+  line-height: 1;
+}
+.intro--heading-large {
+  font-size: 2em;
 }
 /* 
  * 
@@ -1260,12 +1367,13 @@ footer {
   line-height: 1.6;
 }
 .data-table td p {
-  color: #666666;
+  color: #333333;
   padding-bottom: 0;
 }
 .data-table td a {
   color: #003366;
   /*Have to remove jquery anchor styles*/
+  text-decoration: underline;
 }
 .data-table td a:hover {
   color: #00ccff;
