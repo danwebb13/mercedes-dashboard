@@ -3,7 +3,7 @@ html, body {
     background:url("@{base-image-url}/backgrounds/background-body.gif") 0 0 repeat-x @body;
 }
 
-#wrapper {
+.wrapper {
 	position: relative;
 	float:left;
 	width: 100%;
@@ -40,7 +40,17 @@ html, body {
 .page--default { background-image:url("@{base-image-url}/backgrounds/background-sunset.jpg"); }
 .page--homepage { background-image:url("@{base-image-url}/backgrounds/background-content.jpg"); }
 .page--questions { background-image:url("@{base-image-url}/backgrounds/background-spray.jpg"); }
+.page--dashboard { width:900px; padding-left:20px; padding-right:20px; }
 
+
+/*Sections*/
+section {
+    float:left;
+    width:100%;
+}
+.section--spaced {
+    padding-bottom:30px;
+}
 
 
 /* Main Content Containers */

@@ -9,17 +9,10 @@
     <body>
         <?php include 'elements/parts/header.php'; ?>
         <?php include 'elements/modules/toolbar.php'; ?>
-
-        <div class="container">
-            <nav class="nav-primary">
-                <ul>
-                    <li><a>Mercedes Benz Driver Profile</a></li>
-                </ul>
-            </nav>
-        </div>
+        <?php include 'elements/parts/nav1.php'; ?>
 
         <!-- Content -->
-        <div id="wrapper">
+        <div class="wrapper">
             <div class="container">
 
                 <div class="page page--default">

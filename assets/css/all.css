@@ -256,12 +256,17 @@ img {
   font-size: 2.429em;
 }
 /*34px*/
+body {
+  font-family: Arial, Helvetica, "Lucida Grande", sans-serif;
+  font-size: 14px;
+  /* base font size */
+  line-height: 1.4;
+}
 h1,
 h2,
 h3,
 h4,
 h5 {
-  font-family: Verdana, Arial, Helvetica, "Lucida Grande", sans-serif;
   padding: 0 0 14px 0;
   color: #666666;
   line-height: 1.4;
@@ -284,7 +289,6 @@ h5 {
 p,
 a {
   padding: 0 0 14px 0;
-  font-family: Verdana, Arial, Helvetica, "Lucida Grande", sans-serif;
   font-size: 11px;
   color: #666666;
   letter-spacing: -0.03em;
@@ -294,17 +298,16 @@ a {
   text-decoration: none;
 }
 form {
-  font-family: Verdana, Arial, Helvetica, "Lucida Grande", sans-serif;
   font-size: 11px;
 }
-ul li {
-  font-family: Verdana, Arial, Helvetica, "Lucida Grande", sans-serif;
-  list-style-type: none;
-  line-height: 1.4;
+ul,
+ol {
+  padding: 0 0 14px 0;
+}
+li {
+  list-style: disc;
 }
 ol {
-  font-family: Verdana, Arial, Helvetica, "Lucida Grande", sans-serif;
-  list-style-type: decimal;
   padding-left: 40px;
 }
 ol li {
@@ -337,8 +340,13 @@ ol ol li {
   float: left;
   width: 100%;
   padding-bottom: 14px;
+  font-size: 0.857em;
   color: #797c82;
   text-decoration: none;
+}
+.breadcrumb:hover {
+  color: #00ccff;
+  text-decoration: underline;
 }
 /* Custom Links */
 .link-pdf {
@@ -690,7 +698,7 @@ html,
 body {
   background: url("/assets/images/backgrounds/background-body.gif") 0 0 repeat-x #797c82;
 }
-#wrapper {
+.wrapper {
   position: relative;
   float: left;
   width: 100%;
@@ -743,6 +751,19 @@ body {
 }
 .page--questions {
   background-image: url("/assets/images/backgrounds/background-spray.jpg");
+}
+.page--dashboard {
+  width: 900px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+/*Sections*/
+section {
+  float: left;
+  width: 100%;
+}
+.section--spaced {
+  padding-bottom: 30px;
 }
 /* Main Content Containers */
 #content-main {
@@ -815,6 +836,7 @@ footer {
 }
 .nav-primary li {
   float: left;
+  list-style: none;
 }
 .nav-primary a {
   display: block;
@@ -1118,12 +1140,15 @@ footer {
 }
 .intro p {
   font-size: 1em;
+  color: #333333;
 }
 .intro-compact {
   width: 455px;
 }
-.intro--heading-large {
+.intro--heading {
   font-size: 2em;
+  color: #003366;
+  font-weight: bold;
 }
 /* 
  * 
@@ -1142,6 +1167,7 @@ footer {
   background-color: #000000;
 }
 .assistant p {
+  font-size: 12px;
   color: #ffffff;
 }
 .assistant p:last-child {
@@ -1152,6 +1178,8 @@ footer {
   padding-bottom: 10px;
   color: #00ccff;
   text-transform: uppercase;
+  font-weight: bold;
+  line-height: 1.2;
 }
 .assistant--link {
   clear: both;
@@ -1347,17 +1375,21 @@ footer {
   float: left;
   padding-bottom: 10px;
   font-size: 14px;
+  color: #003366;
   text-decoration: underline;
   text-transform: uppercase;
   font-weight: bold;
-  color: #003366;
+  line-height: 1.1;
 }
 .dash-mod--status-label {
   float: left;
   width: 100%;
   padding-bottom: 5px;
+  font-size: 12px;
+  color: #333333;
   font-weight: bold;
   text-transform: uppercase;
+  line-height: 1.1;
 }
 .dash-mod--status-complete {
   color: #305e02;
@@ -1372,7 +1404,9 @@ footer {
   clear: both;
   float: left;
   width: 100%;
+  color: #333333;
   font-size: 12px;
+  line-height: 1.1;
 }
 .dash-mod--overlay {
   position: absolute;
@@ -1458,15 +1492,18 @@ footer {
   padding-bottom: 0;
 }
 .notes--list li {
-  font-size: 14px;
   padding-bottom: 14px;
-  margin-left: 16px;
   padding-left: 0;
+  margin-left: 16px;
+  font-size: 14px;
+  line-height: 1;
 }
 .notes--heading {
   padding-bottom: 10px;
   margin-bottom: 14px;
   font-size: 1.143em;
+  color: #003366;
+  font-weight: bold;
   border-bottom: 2px solid #003366;
 }
 /* 

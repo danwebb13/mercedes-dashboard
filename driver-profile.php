@@ -22,7 +22,7 @@
         </div>
 
         <!-- Content -->
-        <div id="wrapper">
+        <div class="wrapper">
             <div class="container">
 
                 <div class="page page--default">

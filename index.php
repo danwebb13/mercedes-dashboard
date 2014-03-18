@@ -8,17 +8,10 @@
 
     <body>
         <?php include 'elements/parts/header.php'; ?>
-
-        <div class="container">
-            <nav class="nav-primary">
-                <ul>
-                    <li><a class="nav-primary--title">Login Page</a></li>
-                </ul>
-            </nav>
-        </div>
+        <?php include 'elements/parts/nav1.php'; ?>
     	
     	<!-- Content -->
-    	<div id="wrapper">
+    	<div class="wrapper">
     		<div class="container">
 
     			<div class="page page--homepage">

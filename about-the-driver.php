@@ -9,20 +9,10 @@
     <body>
         <?php include 'elements/parts/header.php'; ?>
         <?php include 'elements/modules/toolbar.php'; ?>
-
-         <div class="container">
-            <nav class="nav-primary">
-                <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">My Settings</a></li>
-                    <li><a href="">Help</a></li>
-                    <li><a href="">Logout</a></li>
-                </ul>
-            </nav>
-        </div>
+        <?php include 'elements/parts/nav2.php'; ?>
 
         <!-- Content -->
-        <div id="wrapper">
+        <div class="wrapper">
             <div class="container">
 
                 <div class="page page--questions">
