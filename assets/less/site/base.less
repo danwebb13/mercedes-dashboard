@@ -1,0 +1,61 @@
+/* Main Content Containers */
+html, body {
+    background:url("@{base-image-url}/backgrounds/background-body.gif") 0 0 repeat-x @body;
+}
+
+#wrapper {
+	position: relative;
+	float:left;
+	width: 100%;
+}
+
+
+/*====================================
+ * Frequently used containers & boxes  
+ * =================================== */
+
+/*  Container classes */
+.container {
+    clear:both;
+    display:block;
+    margin:0 auto;
+    max-width:940px;
+    padding-left:20px;
+    padding-right:20px;
+    .clearfix();
+}
+.container-terms { background: transparent; }
+
+
+.page {
+	float:left;
+	width:860px;
+	min-height:450px;
+	padding:20px 40px;
+	background-color:@page;
+	background-repeat:no-repeat;
+	background-position:top center;
+	.clearfix;
+}
+.page--default { background-image:url("@{base-image-url}/backgrounds/background-sunset.jpg"); }
+.page--homepage { background-image:url("@{base-image-url}/backgrounds/background-content.jpg"); }
+.page--questions { background-image:url("@{base-image-url}/backgrounds/background-spray.jpg"); }
+
+
+
+/* Main Content Containers */
+#content-main {
+	float: left;
+	display: inline-block;
+	width: 476px;
+	min-height: 188px;
+	.box-shadow;
+}	
+/* Home page Content box */
+#content-main.content-home {
+	width: 588px;
+	background-color:@content-home;
+}
+.login-help {
+	float:right;
+}

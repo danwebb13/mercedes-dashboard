@@ -25,7 +25,7 @@
         <div id="wrapper">
             <div class="container">
 
-                <div class="page">
+                <div class="page page--questions">
                                                              
                 <div id="content-main" class="standard-box">            
                     <div class="standard-box-header">

@@ -10,10 +10,13 @@
         <?php include 'elements/parts/header.php'; ?>
         <?php include 'elements/modules/toolbar.php'; ?>
 
-        <div class="container">
+         <div class="container">
             <nav class="nav-primary">
                 <ul>
-                    <li><a>Mercedes Benz Driver Profile</a></li>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">My Settings</a></li>
+                    <li><a href="">Help</a></li>
+                    <li><a href="">Logout</a></li>
                 </ul>
             </nav>
         </div>
@@ -21,23 +24,24 @@
         <!-- Content -->
         <div id="wrapper">
             <div class="container">
+                <div class="page page--default">
 
-                <div class="page">
                     <div id="content-main" class="standard-box-alt">
                         <div class="assessment standard-padding">
                             <div class="assessment-header">
                                 <h2 class="heading--inline heading--bold">Driver Assessment Complete!</h2>
                                 <div class="assessment-status assessment-status--right">
                                     <a href="#"><span class="icon-arrow">Arrow</span></a>
-                                    <a class="assessment-status--text" href="/RiskProfile/ViewPDFReport">View Report</a>
+                                    <a class="assessment-status--text assessment-status--link" href="/RiskProfile/ViewPDFReport">View Report</a>
                                 </div>  
                             </div>
                             <div class="assessment-body">
-                                <p>Thank you, you have now completed your Driver Profile and your results have been saved. To download and view your report, click on the View Report link above.</p>
-                                <p>Find out more about your Driver Profile by downloading the <a class="assessment--link" href="http://www.mbdriverprofile.com/Understanding_Your_Driver_Profile.pdf" target="_blank">Understanding Your Driver Profile PDF</a> here.</p>
-                          
-                                <h2 class="heading--bold">Your Driver Profile details:</h2>
+                                <div class="intro">
+                                    <p>Thank you, you have now completed your Driver Profile and your results have been saved. To download and view your report, click on the View Report link above.</p>
+                                    <p>Find out more about your Driver Profile by downloading the <a class="assessment--link" href="http://www.mbdriverprofile.com/Understanding_Your_Driver_Profile.pdf" target="_blank">Understanding Your Driver Profile PDF</a> here.</p>
+                                </div>
 
+                                <h2 class="heading--bold">Your Driver Profile details:</h2>
                                 <ul class="assessment-list">
                                     <li>
                                         <span class="assessment-list--label">Completion Date:</span>
@@ -55,8 +59,8 @@
                             </div>
                         </div>
                     </div>
-                </div>
 
+                </div>
             </div>
         </div>
 

@@ -334,6 +334,7 @@ ol li {
 ol ol li {
   margin-bottom: 0;
 }
+/*Headings*/
 .heading {
   color: #666666;
 }
@@ -342,6 +343,10 @@ ol ol li {
 }
 .heading--inline {
   float: left;
+}
+/*Intros*/
+.intro p {
+  font-size: 15px;
 }
 /*=========== */
 /* Icons      */
@@ -552,6 +557,7 @@ ol ol li {
   font-size: 11px;
   color: #ffffff;
   border: 0;
+  cursor: pointer;
 }
 /*Welcome styles*/
 #welcome {
@@ -628,8 +634,8 @@ header {
 }
 .toolbar {
   float: left;
-  width: 900;
-  padding: 0 20px 10px;
+  width: 860px;
+  padding: 5px 40px;
 }
 /* Logged in user */
 .toolbar--user {
@@ -651,9 +657,6 @@ body {
   float: left;
   width: 100%;
 }
-.container-terms {
-  background: transparent;
-}
 /*====================================
  * Frequently used containers & boxes  
  * =================================== */
@@ -663,8 +666,8 @@ body {
   display: block;
   margin: 0 auto;
   max-width: 940px;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding-left: 20px;
+  padding-right: 20px;
   zoom: 1;
 }
 .container:before {
@@ -683,11 +686,17 @@ body {
   clear: both;
   content: ".";
 }
+.container-terms {
+  background: transparent;
+}
 .page {
   float: left;
-  width: 100%;
-  background: url(../images/backgrounds/background-content.jpg) top center no-repeat #ffffff;
-  min-height: 500px;
+  width: 860px;
+  min-height: 450px;
+  padding: 20px 40px;
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-position: top center;
   zoom: 1;
 }
 .page:before {
@@ -705,6 +714,32 @@ body {
   height: 0;
   clear: both;
   content: ".";
+}
+.page--default {
+  background-image: url("/assets/images/backgrounds/background-sunset.jpg");
+}
+.page--homepage {
+  background-image: url("/assets/images/backgrounds/background-content.jpg");
+}
+.page--questions {
+  background-image: url("/assets/images/backgrounds/background-spray.jpg");
+}
+/* Main Content Containers */
+#content-main {
+  float: left;
+  display: inline-block;
+  width: 476px;
+  min-height: 188px;
+  -webkit-box-shadow: 2px 4px 3px -2px rgba(102, 102, 102, 0.7);
+  box-shadow: 2px 4px 3px -2px rgba(102, 102, 102, 0.7);
+}
+/* Home page Content box */
+#content-main.content-home {
+  width: 588px;
+  background-color: #ffffff;
+}
+.login-help {
+  float: right;
 }
 /* 
  * 
@@ -748,8 +783,8 @@ footer {
 **/
 .nav-primary {
   float: left;
-  width: 900px;
-  padding: 10px 20px;
+  width: 920px;
+  padding: 0 10px;
   background: #000000;
 }
 .nav-primary ul {
@@ -760,13 +795,21 @@ footer {
 }
 .nav-primary li {
   float: left;
-  margin-right: 52px;
 }
 .nav-primary a {
+  display: block;
   font-size: 16px;
   color: #ffffff;
   text-decoration: none;
-  padding-bottom: 0;
+  padding: 7px 30px;
+}
+.nav-primary a:hover {
+  color: #000000;
+  background-color: #ffffff;
+}
+.nav-primary .nav-primary--title:hover {
+  color: #ffffff;
+  background-color: #000000;
 }
 .nav-link {
   float: right;
@@ -775,8 +818,6 @@ footer {
   float: right;
   display: inline;
   width: 235px;
-  padding: 0;
-  margin: 20px 20px 20px 0;
 }
 .sidebar .standard-box {
   width: 100%;
@@ -787,95 +828,6 @@ footer {
 }
 .sidebar-alt .standard-box .standard-box-body {
   padding: 0;
-}
-/* Main Content Containers */
-#content-main {
-  float: left;
-  display: inline-block;
-  width: 476px;
-  min-height: 188px;
-  margin: 20px;
-  -webkit-box-shadow: 2px 4px 3px -2px rgba(102, 102, 102, 0.7);
-  box-shadow: 2px 4px 3px -2px rgba(102, 102, 102, 0.7);
-}
-/* Home page Content box */
-.content-home {
-  width: 588px;
-  background-color: #ffffff;
-}
-.content-home a.login-help {
-  float: right;
-  font-size: 13px;
-  font-weight: bold;
-}
-/* Content for the Assessment pages */
-.assessment p {
-  font-size: 15px;
-}
-.assessment p.last-child {
-  padding-bottom: 0;
-}
-.assessment--link {
-  font-size: 15px;
-  text-decoration: underline;
-}
-.assessment-header {
-  float: left;
-  width: 100%;
-}
-.assessment-body {
-  float: left;
-  width: 100%;
-}
-/*Terms*/
-.assessment--terms-list {
-  float: left;
-  width: 100%;
-  padding-bottom: 20px;
-}
-.assessment--terms {
-  float: left;
-  width: 100%;
-}
-.assessment--terms p {
-  font-size: 10px;
-  line-height: 1.8;
-}
-/*Status*/
-.assessment-status {
-  float: left;
-}
-.assessment-status--right {
-  float: right;
-}
-.assessment-status--text {
-  font-size: 15px;
-  line-height: 1.4;
-  text-decoration: underline;
-}
-/*Assessment List*/
-.assessment-list {
-  float: left;
-  width: 100%;
-  list-style: none;
-  padding: 0 0 30px;
-}
-.assessment-list li {
-  float: left;
-  width: 100%;
-  padding-bottom: 2px;
-  font-size: 13px;
-  color: #666666;
-}
-.assessment-list--label {
-  float: left;
-  width: 34%;
-  font-weight: bold;
-}
-.assessment-list--value {
-  float: left;
-  width: 60%;
-  padding-left: 3%;
 }
 /*========================
  * Terms Of Use popup box  
@@ -1070,6 +1022,76 @@ footer {
 }
 .validation-summary-valid {
   display: none;
+}
+/*
+ *
+ * $Assessment - Assessment related modules 
+ *
+**/
+.assessment--link {
+  font-size: 15px;
+  text-decoration: underline;
+}
+.assessment-header {
+  float: left;
+  width: 100%;
+}
+.assessment-body {
+  float: left;
+  width: 100%;
+}
+/*Assessment Terms*/
+.assessment--terms-list {
+  float: left;
+  width: 100%;
+  padding-bottom: 20px;
+}
+.assessment--terms {
+  float: left;
+  width: 100%;
+}
+.assessment--terms p {
+  font-size: 10px;
+  line-height: 1.8;
+}
+/*Assessment Status*/
+.assessment-status {
+  float: left;
+}
+.assessment-status--right {
+  float: right;
+}
+.assessment-status--link {
+  text-decoration: underline;
+}
+.assessment-status--text {
+  font-size: 15px;
+  line-height: 1.4;
+}
+/*Assessment begin link*/
+/*Assessment List*/
+.assessment-list {
+  float: left;
+  width: 100%;
+  list-style: none;
+  padding: 0 0 30px;
+}
+.assessment-list li {
+  float: left;
+  width: 100%;
+  padding-bottom: 2px;
+  font-size: 13px;
+  color: #666666;
+}
+.assessment-list--label {
+  float: left;
+  width: 34%;
+  font-weight: bold;
+}
+.assessment-list--value {
+  float: left;
+  width: 60%;
+  padding-left: 3%;
 }
 /*==================== */
 /* Spacing			   */
