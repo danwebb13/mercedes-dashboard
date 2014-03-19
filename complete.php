@@ -31,24 +31,20 @@
                                 <div class="assessment--terms">
                                     <p>Mercedes-Benz World may contact you to send you your Driver Profile feedback, to provide information about our products, services or special offers, or for purposes of research and analysis. By providing your contact details you agree to be contacted by these methods for these purposes. If you prefer <strong>not</strong> to receive information in a particular format please tick the relevant box:</span></p>
                                 </div>
-                                <div class="form-field">
-                                    <div class="assessment--terms-list">
-                                        <ul>
-                                            <li>
-                                                <input class="form-profile--checkbox" type="checkbox" value="1"  id="post" name="post" />
-                                                <label class="form-profile--label form-profile--label-small form-profile--label-right">Do not contact me by post</label>
-                                            </li>
-                                            <li>
-                                                <input class="form-profile--checkbox" type="checkbox" value="1"  id="telephone" name="telephone" />
-                                                <label class="form-profile--label form-profile--label-small form-profile--label-right MvcDynamicListFieldInputLabel" for="">Do not contact me by telephone</label>
-                                            </li>
-                                            <li>
-                                                <input class="form-profile--checkbox" type="checkbox" value="1"  id="Email" name="Email" />
-                                                <label class="form-profile--label form-profile--label-small form-profile--label-right">Do not contact me by email</label>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
+                                <ul class="assessment--terms-list">
+                                    <li>
+                                        <input class="form-profile--checkbox" type="checkbox" value="1"  id="post" name="post" />
+                                        <label class="form-profile--label form-profile--label-small form-profile--label-right">Do not contact me by post</label>
+                                    </li>
+                                    <li>
+                                        <input class="form-profile--checkbox" type="checkbox" value="1"  id="telephone" name="telephone" />
+                                        <label class="form-profile--label form-profile--label-small form-profile--label-right MvcDynamicListFieldInputLabel" for="">Do not contact me by telephone</label>
+                                    </li>
+                                    <li>
+                                        <input class="form-profile--checkbox" type="checkbox" value="1"  id="Email" name="Email" />
+                                        <label class="form-profile--label form-profile--label-small form-profile--label-right">Do not contact me by email</label>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                         <div class="standard-box-footer">
