@@ -28,7 +28,7 @@
                             <div class="MvcDynamicForm">
                                 <div class="MvcFieldWrapper">
                                     <label class="form-profile--label form-profile--label-heading">Question 1 of 25: How old are you?</label>
-                                    <ul class="MvcDynamicVertical MvcDynamicOrientableList">
+                                    <ul class="form-profile--list MvcDynamicVertical MvcDynamicOrientableList">
                                         <li>
                                             <input class="form-profile--checkbox" id="MvcDynamicField_42290ba6-7332-45a1-af66-028f245ec8360" name="" type="radio" value="25 or younger" />
                                             <label class="form-profile--label form-profile--label-strong form-profile--label-right MvcDynamicListFieldInputLabel" for="">25 or younger</label>
@@ -54,7 +54,7 @@
                             <input class="button" type="submit" value="Save & Exit" id="Save" name="Command"  />
                             <div class="nav-page">
                                 <input class="button" type="submit" value="Back" id="Back" name="Command" />
-                                <input class="button" type="submit" value="Next" id="Next" name="Command" />
+                                <input class="button button--neighbour" type="submit" value="Next" id="Next" name="Command" />
                             </div>
                         </div>
 

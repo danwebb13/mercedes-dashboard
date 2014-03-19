@@ -34,8 +34,8 @@
                         </div>
 
                         <div class="standard-box-footer">
-                            <input class="button" type="submit" value="Next" id="Next" name="Command" />
                             <input class="button" type="submit" value="Log Out" id="Logout" name="Command" />
+                            <input class="button button--neighbour button--right" type="submit" value="Next" id="Next" name="Command" />
                         </div>
                         </form>
                     </div>

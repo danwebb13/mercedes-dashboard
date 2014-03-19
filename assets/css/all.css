@@ -469,6 +469,13 @@ ol ol li {
   float: left;
   width: 100%;
 }
+/*Form Profile List*/
+.form-profile--list li {
+  float: left;
+  width: 100%;
+  padding-bottom: 6px;
+  list-style: none;
+}
 .form-profile--label {
   clear: left;
   float: left;
@@ -477,7 +484,7 @@ ol ol li {
   padding-right: 2%;
   font-size: 11px;
   font-weight: bold;
-  line-height: 1.4;
+  line-height: 1.25;
 }
 .form-profile--label-heading {
   width: 100%;
@@ -538,6 +545,7 @@ ol ol li {
 .form-profile--checkbox {
   float: left;
   width: 3%;
+  margin: 1px;
 }
 /*Hint*/
 .form-profile--hint {
@@ -714,6 +722,9 @@ ol ol li {
 }
 .button-play:hover {
   background-color: #999999;
+}
+.button--neighbour {
+  margin-left: 2px;
 }
 .button--right {
   float: right;
