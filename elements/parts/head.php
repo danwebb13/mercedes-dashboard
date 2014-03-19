@@ -4,6 +4,8 @@
     <title>Mercedes-Benz Driver Profile</title>
     <meta name="description" content="" />
     <link rel="stylesheet" href="/assets/css/all.css" />
+    <link rel="stylesheet" href="/assets/css/custom.css" />
+
     <link href="/assets/css/custom.css" rel="stylesheet" type="text/css" />
 	<link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
 	<!--[if lt IE 9]>
